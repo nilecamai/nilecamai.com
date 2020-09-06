@@ -11,3 +11,43 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container {
+  position: relative;
+  text-align: left;
+}
+
+.n-card {
+  margin: 20px;
+}
+
+.n-card-image {
+  border-radius: 10px;
+  width: 300px;
+  height: 480px;
+  box-shadow: 0px 0px 3px 1px #ccc;
+  object-fit: cover;
+}
+
+.n-card-info {
+  padding-left: 20px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  min-height: 100px;
+  width: 300px;
+  position: absolute;
+  bottom: 0px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #eeeeee95;
+}
+
+.n-card-title {
+  font-size: 24px;
+  margin: 0px;
+}
+
+.n-card-subtitle {
+  font-size: 16px;
+  margin: 0px;
+}
