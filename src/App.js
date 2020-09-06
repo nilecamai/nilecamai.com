@@ -9,6 +9,8 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 
+import aboutImage from './assets/images/portrait.jpg';
+
 class App extends React.Component {
 
   constructor(props) {
@@ -24,10 +26,12 @@ class App extends React.Component {
       home: {
         title: 'Hi there.',
         subTitle: 'I\'m Nile',
-        bodyText: 'uw student lol'
+        bodyText: 'uw student lol',
+        imgSrc: aboutImage
       },
       about: {
-        title: 'About Me'
+        title: 'About Me',
+        imgSrc: aboutImage
       },
       contact: {
         title: 'hmu'
@@ -52,9 +56,9 @@ class App extends React.Component {
             </Navbar.Collapse>
           </Navbar>
 
-          <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} bodyText={this.state.home.bodyText} /> } />
-          <Route path="/about" exact render={() => <AboutPage title={this.state.about.title} /> } />
-          <Route path="/contact" exact render={() => <ContactPage title={this.state.contact.title} /> } />
+          <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} bodyText={this.state.home.bodyText} imgSrc={this.state.home.imgSrc} /> } />
+          <Route path="/about" render={() => <AboutPage title={this.state.about.title} imgSrc={this.state.about.imgSrc} /> } />
+          <Route path="/contact" render={() => <ContactPage title={this.state.contact.title} /> } />
 
           <Footer />
 
