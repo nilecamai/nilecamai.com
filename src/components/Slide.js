@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 
 const Slide = ({property}) => {
 
     const {
-        id,
+        //id,
         title,
         bodyText,
         firstButtonLabel,
@@ -14,8 +14,7 @@ const Slide = ({property}) => {
         secondButtonLabel,
         secondButtonIconSrc,
         secondButtonLink,
-        bgImgSrc,
-        isSelected
+        bgImgSrc
     } = property;
 
     return(
@@ -26,9 +25,9 @@ const Slide = ({property}) => {
                     <p className="n-slide-title">{title}</p>
                     <p className="n-slide-body">{bodyText}</p>
                     <div className="n-slide-card-buttons">
-                        { firstButtonLabel != '' && <Button variant="outline-primary" href={firstButtonLink}>{firstButtonLabel}</Button> }
+                        { firstButtonLabel != null && <Button variant="outline-primary" href={firstButtonLink}>{firstButtonLabel}</Button> }
                         {' '}
-                        { secondButtonLabel != '' && <Button variant="outline-secondary" href={secondButtonLink}>{secondButtonLabel} </Button> }
+                        { secondButtonLabel != null && <Button variant="outline-secondary" href={secondButtonLink}>{secondButtonLabel} </Button> }
                     </div>
                 </div>
             </div>

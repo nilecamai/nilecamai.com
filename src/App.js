@@ -9,7 +9,8 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 
-import aboutImage from './assets/images/portrait.jpg';
+import data from './data/data';
+import ProjectsPage from './pages/ProjectsPage';
 
 class App extends React.Component {
 
@@ -17,48 +18,36 @@ class App extends React.Component {
     super(props)
     this.state = {
       title: 'Nile Camai',
-      // navbar 
-      headerLinks: [
-        { title: 'Home', path: '/' },
-        { title: 'About', path: '/' },
-        { title: 'Contact', path: '/' }
-      ],
-      home: {
-        title: 'Hi there.',
-        subTitle: 'I\'m Nile',
-        bodyText: 'uw student lol',
-        imgSrc: aboutImage
-      },
-      about: {
-        title: 'About Me',
-        imgSrc: aboutImage
-      },
-      contact: {
-        title: 'hmu'
-      }
+      // navbar
+      pages: data.pages
     }
   }
   
   render() {
+
+    const pages = this.state.pages;
+
     return(
       <Router>
         <Container className="p-0" fluid={true}>
-          <Navbar className="border-bottom" bg="transparent" expand="lg">
+          <Navbar sticky="top" className="border-bottom" bg="white" expand="lg">
             <Navbar.Brand>Nile Camai</Navbar.Brand>
 
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle"/>
             <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto">
-                <Link className="nav-link" to="/">Home</Link>
-                <Link className="nav-link" to="/about">About</Link>
-                <Link className="nav-link" to="/contact">Contact</Link>
+                <Link className="nav-link" to={pages[0].path}>{pages[0].nav}</Link>
+                <Link className="nav-link" to={pages[2].path}>{pages[2].nav}</Link>
+                <Link className="nav-link" to={pages[1].path}>{pages[1].nav}</Link>
+                <Link className="nav-link" to={pages[3].path}>{pages[3].nav}</Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
 
-          <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} bodyText={this.state.home.bodyText} imgSrc={this.state.home.imgSrc} /> } />
-          <Route path="/about" render={() => <AboutPage title={this.state.about.title} imgSrc={this.state.about.imgSrc} /> } />
-          <Route path="/contact" render={() => <ContactPage title={this.state.contact.title} /> } />
+          <Route path={pages[0].path} exact render={() => <HomePage /> } />
+          <Route path={pages[1].path} render={() => <AboutPage title={pages[1].title} imgSrc={pages[1].imgSrc} /> } />
+          <Route path={pages[2].path} render={() => <ProjectsPage title={pages[2].title} /> } />
+          <Route path={pages[3].path} render={() => <ContactPage title={pages[3].title} /> } />
 
           <Footer />
 

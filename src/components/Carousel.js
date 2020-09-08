@@ -2,47 +2,20 @@ import React from 'react';
 
 import Card from './Card';
 
-import inaba from '../assets/images/inaba.gif';
-import mai from '../assets/images/mai.gif';
-import nibutani from '../assets/images/nibutani.gif';
 import { Container, Row } from 'react-bootstrap';
+import data from '../data/data';
 
 class Carousel extends React.Component {
 
     constructor(props) {
         super(props);
         this.state={
-            items: [
-                {
-                    id: 0,
-                    title: 'Himeko Inaba',
-                    subTitle: 'Kokoro Connect',
-                    imgSrc: inaba,
-                    link: 'https://google.com',
-                    selected: false
-                },
-                {
-                    id: 1,
-                    title: 'Sakurajima Mai',
-                    subTitle: 'Rascal Does Not Dream of Bunny Girl Senpai',
-                    imgSrc: mai,
-                    link: 'https://google.com',
-                    selected: false
-                },
-                {
-                    id: 2,
-                    title: 'Nibutani Shinka',
-                    subTitle: 'Love, Chunibyo, and Other Delusions!',
-                    imgSrc: nibutani,
-                    link: 'https://google.com',
-                    selected: false
-                }
-            ]
+            cards: data.cards
         }
     }
 
     handleCardHover = (id, card) => {
-        let items = [...this.state.items];
+        let items = [...this.state.cards];
 
         items[id].selected = items[id].selected ? false : true;
 
@@ -69,7 +42,7 @@ class Carousel extends React.Component {
         return(
             <Container fluid={true}>
                 <Row className="justify-content-around n-carousel">
-                    {this.makeItems(this.state.items)}
+                    {this.makeItems(this.state.cards)}
                 </Row>
             </Container>
         );

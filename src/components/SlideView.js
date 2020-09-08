@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container, Row } from 'react-bootstrap';
 import { useSpring, animated } from 'react-spring';
 
 import data from '../data/data';

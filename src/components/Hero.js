@@ -16,7 +16,7 @@ function Hero(props) {
                             </Col>
                             <Col>
                                 <Row className="justify-content-center">
-                                    <img className="n-hero-image" src={props.imgSrc} alt={props.imgSrc} />
+                                    { props.imgSrc != null && <img className="n-hero-image" src={props.imgSrc} alt={props.imgSrc} />}
                                 </Row>
                             </Col>
                         </Row>
