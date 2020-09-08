@@ -1,5 +1,4 @@
-import React from 'react';
-import { useState, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { useSpring, animated } from 'react-spring';
 
 import CardInfo from './CardInfo';

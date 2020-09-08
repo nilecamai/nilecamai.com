@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Hero from '../components/Hero';
 import Carousel from '../components/Carousel';
+import SlideView from '../components/SlideView';
 import { useSpring, animated } from 'react-spring';
 
 function HomePage(props) {
@@ -13,8 +13,8 @@ function HomePage(props) {
       })
 
     return(
-        <animated.div style={style}>
-            <Hero title={props.title} subTitle={props.subTitle} bodyText={props.bodyText} imgSrc={props.imgSrc}></Hero>
+        <animated.div style={style} className="box">
+            <SlideView></SlideView>
             <Carousel></Carousel>
         </animated.div>
     );
