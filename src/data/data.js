@@ -10,25 +10,25 @@ const data = {
     "pages": [
         {
             nav: 'Home',
-            path: '/nilec',
+            path: '/',
             title: 'Hi there.',
             subTitle: 'I\'m Nile',
             bodyText: 'uw student lol',
         },
         {
             nav: 'About',
-            path: '/nilec/about',
+            path: '/about',
             title: 'About Me',
             imgSrc: portrait
         },
         {
             nav: 'Projects',
-            path: '/nilec/projects',
+            path: '/projects',
             title: 'Projects'
         },
         {
             nav: 'Contact',
-            path: '/nilec/contact',
+            path: '/contact',
             title: 'hmu'
         }
     ],

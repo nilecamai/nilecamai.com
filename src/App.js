@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 //import { render } from '@testing-library/react';
 import { Container, Navbar, Nav } from 'react-bootstrap/';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { HashRouter as HashRouter, Route, Link } from 'react-router-dom';
 
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
@@ -30,7 +30,7 @@ class App extends React.Component {
     const homepage = this.state.homepage;
 
     return(
-      <Router>
+      <HashRouter>
         <Container className="p-0" fluid={true}>
           <Navbar sticky="top" className="border-bottom" bg="white" expand="lg">
             <Navbar.Brand>Nile Camai</Navbar.Brand>
@@ -54,7 +54,7 @@ class App extends React.Component {
           <Footer />
 
         </Container>
-      </Router>
+      </HashRouter>
     );
   }
 
