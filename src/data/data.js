@@ -5,28 +5,30 @@ import portrait from '../assets/images/portrait.jpg';
 
 const data = {
 
+    "homepage": 'nilec',
+
     "pages": [
         {
             nav: 'Home',
-            path: '/',
+            path: '/nilec',
             title: 'Hi there.',
             subTitle: 'I\'m Nile',
             bodyText: 'uw student lol',
         },
         {
             nav: 'About',
-            path: '/about',
+            path: '/nilec/about',
             title: 'About Me',
             imgSrc: portrait
         },
         {
             nav: 'Projects',
-            path: '/projects',
+            path: '/nilec/projects',
             title: 'Projects'
         },
         {
             nav: 'Contact',
-            path: '/contact',
+            path: '/nilec/contact',
             title: 'hmu'
         }
     ],

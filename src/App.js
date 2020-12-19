@@ -19,13 +19,15 @@ class App extends React.Component {
     this.state = {
       title: 'Nile Camai',
       // navbar
-      pages: data.pages
+      pages: data.pages,
+      homepage: data.homepage
     }
   }
   
   render() {
 
     const pages = this.state.pages;
+    const homepage = this.state.homepage;
 
     return(
       <Router>
