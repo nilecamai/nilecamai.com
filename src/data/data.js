@@ -1,7 +1,10 @@
-import inaba from '../assets/images/inaba.gif';
-import mai from '../assets/images/mai.gif';
-import nibutani from '../assets/images/nibutani.gif';
+import pokerChipsSimulatorCard from '../assets/images/pokerChipsSimulatorCard.png';
+import telloMapperCard from '../assets/images/telloMapperCard.png';
+import faceMeCard from '../assets/images/faceMeCard.png';
 import portrait from '../assets/images/portrait.jpg';
+import bgImg1 from '../assets/images/cityWaterfront.jpg';
+import bgImg2 from '../assets/images/robo1.JPG';
+import bgImg3 from '../assets/images/bwPortrait.jpg';
 
 const data = {
 
@@ -40,12 +43,12 @@ const data = {
             title: 'I am Nile Camai',
             bodyText: 'a Computer Science student at the University of Washington',
             firstButtonLabel: 'About me',
-            firstButtonIconSrc: 'inaba',
+            firstButtonIconSrc: '',
             firstButtonLink: '/about',
             secondButtonLabel: 'View CV',
             secondButtonIconSrc: '',
             secondButtonLink: '',
-            bgImgSrc: ''
+            bgImgSrc: bgImg1
         },
         {
             id: 1,
@@ -53,8 +56,8 @@ const data = {
             bodyText: 'that is awesome. check out my work:',
             firstButtonLabel: 'Projects',
             firstButtonIconSrc: '',
-            firstButtonLink: '',
-            bgImgSrc: ''
+            firstButtonLink: '/projects',
+            bgImgSrc: bgImg2
         },
         {
             id: 2,
@@ -62,8 +65,8 @@ const data = {
             bodyText: '',
             firstButtonLabel: 'Contact me',
             firstButtonIconSrc: '',
-            firstButtonLink: '',
-            bgImgSrc: ''
+            firstButtonLink: '/contact',
+            bgImgSrc: bgImg3
         }
     ],
 
@@ -71,25 +74,25 @@ const data = {
     "cards": [
         {
             id: 0,
-            title: 'Himeko Inaba',
-            subTitle: 'Kokoro Connect',
-            imgSrc: inaba,
-            link: 'https://google.com',
+            title: 'Poker Chips Simulator',
+            subTitle: 'Have a deck but forgot the poker chips? Play on with virtual currency!',
+            imgSrc: pokerChipsSimulatorCard,
+            link: 'https://devpost.com/software/poker-chip-simulator',
             selected: false
         },
         {
             id: 1,
-            title: 'Sakurajima Mai',
-            subTitle: 'Rascal Does Not Dream of Bunny Girl Senpai',
-            imgSrc: mai,
-            link: 'https://google.com',
+            title: 'FaceMe',
+            subTitle: 'Make connecting with loved ones easier with more accessible video calls.',
+            imgSrc: faceMeCard,
+            link: 'https://devpost.com/software/facecentric/',
             selected: false
         },
         {
             id: 2,
-            title: 'Nibutani Shinka',
-            subTitle: 'Love, Chunibyo, and Other Delusions!',
-            imgSrc: nibutani,
+            title: 'Tello Mapper',
+            subTitle: 'Map paths and autonomously fly your DJI Tello with this Android application.',
+            imgSrc: telloMapperCard,
             link: 'https://google.com',
             selected: false
         }
