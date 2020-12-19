@@ -88,7 +88,7 @@ code {
   bottom: 0px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  background-color: #eeeeee95;
+  background-color: #ffffffde;
   color: #212529;
 }
 
@@ -125,7 +125,7 @@ code {
 }
 
 .n-slide-card {
-  background-color: #eeeeee95;
+  background-color: #ffffffde;
   min-width: 30vw;
   max-width: 20rem;
   display: block;
@@ -141,6 +141,11 @@ code {
 
 .n-slide-card-buttons {
   margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.n-slide-card-button {
+  margin-right: 1rem;
 }
 
 .n-slide-info {
@@ -173,7 +178,7 @@ code {
   height: 12px;
   width: 12px;
   margin: 5px;
-  background-color: #444;
+  background-color: #eee;
   border-radius: 50%;
   display: inline-block;
   cursor: pointer;
