@@ -105,7 +105,7 @@ code {
 }
 
 .n-slide {
-  height: 90vh;
+  height: calc(100vh - 3.5rem);
   width: 100%;
   position: relative;
 }
@@ -116,7 +116,6 @@ code {
   background-position: bottom center;
   position: relative;
   overflow: visible;
-  height: 90vh;
 }
 
 .n-slide-image {
@@ -127,43 +126,40 @@ code {
 
 .n-slide-card {
   background-color: #eeeeee95;
-  width: 30vw;
-  height: 30vh;
+  min-width: 30vw;
+  max-width: 20rem;
+  display: block;
+  
   position: absolute;
-  right: 5vw;
-  bottom: 5vh;
+  right: 1.62rem;
+  bottom: 2rem;
 
-  padding-left: 2.2vw;
-  padding-right: 2.2vw;
-  padding-top: 2.2vh;
-  padding-bottom: 2.2vh;
+  margin-left: 1.62rem;
+
+  padding: 1rem;
 }
 
 .n-slide-card-buttons {
-  position: absolute;
-  bottom: 3.3vh;
-  max-height: 6.6vh;
-  max-width: 25.6vw;
-  overflow: hidden;
+  margin-top: 1rem;
 }
 
 .n-slide-info {
-  max-height: 18vh;
-  overflow: scroll;
+  overflow: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .n-slide-title {
   font-size: 32px;
   margin: 0px;
   color: #212529;
-  overflow: scroll;
 }
 
 .n-slide-body {
   font-size: 18px;
   margin: 0px;
   color: #212529;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .n-slides-control {
@@ -199,5 +195,5 @@ li.nostyle {
 }
 
 .n-carousel {
-  padding: 10vh;
+  padding: 5rem;
 }
