@@ -2,11 +2,15 @@ import React from 'react';
 
 import Hero from '../components/Hero';
 import Content from '../components/Content';
+import { useSpring, animated } from 'react-spring';
+import data from '../data/data';
 
 function AboutPage(props) {
 
+    const style = useSpring(data.fadeIn)
+
     return(
-        <div>
+        <animated.div style={style}>
             <Hero title={props.title} imgSrc={props.imgSrc} />
             <Content>
                 <p>Pleased to meet you! My name is Nile Camai, and I'm a Computer Science student at the <strong className="uw-brand-color">University of Washington</strong>. I was born and raised on the Sammamish plateau and am lucky to call the great PNW my home for the next four years!</p>
@@ -15,7 +19,7 @@ function AboutPage(props) {
                 <p>When I'm not coding, I love buying boba, making boba, and drinking boba. Other interests of mine include music, film, photography, and gaming. I like trying new things, seeking discomfort, and making the most out of life.</p>
                 <p>On to the next!</p>
             </Content>
-        </div>  
+        </animated.div>  
     );
 
 }

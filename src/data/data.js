@@ -8,6 +8,11 @@ import bgImg3 from '../assets/images/bwPortrait.jpg';
 
 const data = {
 
+    "fadeIn": {
+        opacity: 1,
+        from: { opacity: 0 },
+    },
+
     "homepage": 'nilec',
 
     "pages": [
