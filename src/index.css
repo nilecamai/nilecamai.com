@@ -104,24 +104,27 @@ code {
   color: #212529;
 }
 
-.n-slide {
+.n-slide-viewer {
   height: calc(100vh - 3.5rem);
   width: 100%;
-  position: relative;
-}
-
-.n-slide-viewer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
   position: relative;
   overflow: visible;
+
+}
+.n-slide {
+  height: inherit;
+  width: inherit;
+  position: absolute;
 }
 
 .n-slide-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  position: inherit;
 }
 
 .n-slide-card {
@@ -192,6 +195,7 @@ li.nostyle {
   display: flex;
   flex-flow: column;
   height: 100%;
+  width: 100%;
 }
 
 .n-footer {

@@ -1,53 +1,49 @@
-import React from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
+import { useTransition, animated } from 'react-spring';
+import Slide from '../components/Slide';
+import { render } from 'react-dom';
 
 import data from '../data/data';
 
-import Slide from '../components/Slide';
-import { Spring, animated } from 'react-spring/renderprops';
+const slides = [
+    ({ style }) => <animated.div className="box" style={style}><Slide property={data.slides[0]} /></animated.div>,
+    ({ style }) => <animated.div className="box" style={style}><Slide property={data.slides[1]} /></animated.div>,
+    ({ style }) => <animated.div className="box" style={style}><Slide property={data.slides[2]} /></animated.div>,
+  ]
 
-class Slides extends React.Component {
+export default function SlideView() {
 
-    constructor(props) {
-        super(props);
-        this.state={
-            properties: data.slides,
-            property: data.slides[0]
-        }
+    const [index, set] = useState(0);
+
+    function SetSlide(index) {
+        return useCallback(() => set(index), [])
     }
 
-    makeItems = (items) => {
-        return items.map(item => {
-            return <Slide item={item} key={item.id} />
-        })
-    }
+    const transitions = useTransition(index, null, {
+        from: { position: 'absolute', opacity: 0 },
+        enter: { opacity: 1 },
+        leave: { opacity: 0 },
+    })
+    
+    useEffect(() => void setInterval(() => set(state => (state + 1) % 3), 5000), [])
 
-    selectSlide(index) {
-        this.setState({
-            property: data.slides[index]
-        })
-    }
-
-    render() {
-
-        const {property} = this.state;
-        return(
-            // figure out how to animate on event
-            <Spring from={{ opacity: 0 }} to={{ opacity: 1 }}>{props => 
-
-                    <div className="n-slide" style={props}>
-                        <Slide property={property}></Slide>
-                        <div className="n-slides-control">
-                            <span onClick={() => this.selectSlide(0)} className="n-dot"></span>
-                            <span onClick={() => this.selectSlide(1)} className="n-dot"></span>
-                            <span onClick={() => this.selectSlide(2)} className="n-dot"></span>
-                        </div>
-                    </div>
-
-            }
-            </Spring>
-        );
-    }
-
+    return (
+        <div className="n-slide-viewer">
+            <div className="simple-trans-main">
+                {transitions.map(({ item, props, key }) => {
+                    const Slide = slides[item]
+                    return <Slide key={key} style={props} />
+                })}
+            </div>
+            
+            <div className="n-slides-control">
+                <span onClick={SetSlide(0)} className="n-dot"></span>
+                <span onClick={SetSlide(1)} className="n-dot"></span>
+                <span onClick={SetSlide(2)} className="n-dot"></span>
+            </div>
+        </div>
+    );
 }
 
-export default Slides;
+
+render(<SlideView />, document.getElementById('root'))
