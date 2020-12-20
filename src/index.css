@@ -105,15 +105,23 @@ code {
 }
 
 .n-slide-viewer {
-  height: calc(100vh - 3.5rem);
+  height: inherit;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
   position: relative;
   overflow: visible;
-
 }
+
+.n-slide-desktop {
+  height: calc(100vh - 3.5rem);
+}
+
+.n-slide-mobile {
+  height: calc(85vh - 3.5rem);
+}
+
 .n-slide {
   height: inherit;
   width: inherit;
@@ -134,10 +142,10 @@ code {
   display: block;
   
   position: absolute;
-  right: 1.62rem;
-  bottom: 2rem;
+  right: 2rem;
+  bottom: 4rem;
 
-  margin-left: 1.62rem;
+  margin-left: 2rem;
 
   padding: 1rem;
 }
@@ -173,7 +181,7 @@ code {
 .n-slides-control {
   width: 100%;
   text-align: center;
-  bottom: 0px;
+  bottom: 1rem;
   position: absolute;
 }
 

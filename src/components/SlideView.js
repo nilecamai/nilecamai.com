@@ -2,6 +2,7 @@ import React, { useState, useCallback, useEffect } from 'react';
 import { useTransition, animated } from 'react-spring';
 import Slide from '../components/Slide';
 import { render } from 'react-dom';
+import { isMobile } from 'react-device-detect';
 
 import data from '../data/data';
 
@@ -27,19 +28,23 @@ export default function SlideView() {
     
     useEffect(() => void setInterval(() => set(state => (state + 1) % 3), 5000), [])
 
+    const platform = isMobile ? "n-slide-mobile" : "n-slide-desktop";
+
     return (
-        <div className="n-slide-viewer">
-            <div className="simple-trans-main">
-                {transitions.map(({ item, props, key }) => {
-                    const Slide = slides[item]
-                    return <Slide key={key} style={props} />
-                })}
-            </div>
-            
-            <div className="n-slides-control">
-                <span onClick={SetSlide(0)} className="n-dot"></span>
-                <span onClick={SetSlide(1)} className="n-dot"></span>
-                <span onClick={SetSlide(2)} className="n-dot"></span>
+        <div className={platform}>
+            <div className="n-slide-viewer">
+                <div className="simple-trans-main">
+                    {transitions.map(({ item, props, key }) => {
+                        const Slide = slides[item]
+                        return <Slide key={key} style={props} />
+                    })}
+                </div>
+                
+                <div className="n-slides-control">
+                    <span onClick={SetSlide(0)} className="n-dot"></span>
+                    <span onClick={SetSlide(1)} className="n-dot"></span>
+                    <span onClick={SetSlide(2)} className="n-dot"></span>
+                </div>
             </div>
         </div>
     );
