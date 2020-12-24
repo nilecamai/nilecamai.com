@@ -20,7 +20,14 @@ import python from '../assets/icons/python.svg';
 import go from '../assets/icons/go.svg';
 import android from '../assets/icons/android.svg';
 import socket_io from '../assets/icons/socket_io.svg';
+import opencv from '../assets/icons/opencv.svg';
 import google_cloud from '../assets/icons/google_cloud.svg';
+
+// Projects page images
+import pokerChipsSimulatorSq from '../assets/images/pokerChipsSimulatorSq.png';
+import faceMeSq from '../assets/images/faceMeSq.png';
+import telloMapper from '../assets/images/telloMapper.gif';
+import sarGui from '../assets/images/sarGui.gif';
 
 const data = {
 
@@ -122,7 +129,7 @@ const data = {
     "projects" : [
         {
             title: 'Poker Chips Simulator',
-            imgSrc: '',
+            imgSrc: pokerChipsSimulatorSq,
             links: [
                 {
                     url: 'https://github.com/9KelvinN/Winston-Nile-Kelvin-CSE143-Final',
@@ -147,7 +154,125 @@ const data = {
             ],
             buttonLink: 'http://34.221.107.58:3000/',
             buttonLabel: 'Try it out!',
-            description: 'description',
+            description: [
+                {
+                    line: 'Ever wanted to play a thrilling game of Texas Hold\'em, but forgot to bring the chips? This .io web application solves that problem by using virtual currency with familiar betting rules to play together.',
+                },
+                {
+                    line: 'The host can create a lobby with 3-5 players and have their friends join with a four-digit room code. The game will then handle player balances, the pot, the ante, and the turns according to Texas Hold\'em rules.',
+                },
+                {
+                    line: 'This project was a collaboration with classmates Kelvin Ng and Winston Bullen for our CSE143 final project.',
+                },
+            ]
+        },
+        {
+            title: 'FaceMe',
+            imgSrc: faceMeSq,
+            links: [
+                {
+                    url: 'https://github.com/nilecamai/FaceMe',
+                    label: 'GitHub',
+                    src: github,
+                },
+                {
+                    url: 'https://devpost.com/software/facecentric',
+                    label: 'Devpost',
+                    src: devpost,
+                },
+            ],
+            icons: [
+                {
+                    label: 'Python',
+                    src: python,
+                },
+                {
+                    label: 'OpenCV',
+                    src: opencv,
+                },
+                {
+                    label: 'Google Cloud API',
+                    src: google_cloud,
+                },
+            ],
+            buttonLink: null,
+            buttonLabel: null,
+            description: [
+                {
+                    line: 'With the lockdown and stay-at-home orders, connecting with people is more important than ever. However, some of our loved ones aren\'t the most tech-savvy with video conferencing apps.',
+                },
+                {
+                    line: 'FaceMe is a tool that aims to make video calls more accessible. With the help of the OpenCV and Google Cloud libraries, the application uses audio signals, visual cues, and speech commands as accessibility features.'
+                },
+                {
+                    line: 'This project was a collaboration with teammates Kelvin Ng, Devesh Sarda, Tenzin Low, and Nikola Bojanic as a submission to DubHacks 2020. It won Best Use of Google Cloud and Best First-Time Hack.'
+                }
+            ]
+        },
+        {
+            title: 'TelloMapper',
+            imgSrc: telloMapper,
+            links: [
+                {
+                    url: 'https://github.com/nilecamai/TelloMapper',
+                    label: 'GitHub',
+                    src: github,
+                },
+            ],
+            icons: [
+                {
+                    label: 'Android',
+                    src: android,
+                },
+                {
+                    label: 'Java',
+                    src: java,
+                },
+                {
+                    label: 'Go',
+                    src: go,
+                },
+            ],
+            buttonLink: null,
+            buttonLabel: null,
+            description: [
+                {
+                    line: 'TelloMapper is an Android application that connects to a DJI Tello drone to control its movement.',
+                },
+                {
+                    line: 'Users create paths by placing points on a coordinate plane. These coordinate sets are then saved as \"paths\" that can be flown on a DJI Tello connected via Wi-Fi.',
+                },
+                {
+                    line: 'The app code is written in Java, and the flight controles are written in Go using Gobot drivers.'
+                }
+            ]
+        },
+        {
+            title: 'Synthetic Aperture Radar (SAR) GUI',
+            imgSrc: sarGui,
+            links: [
+                {
+                    url: 'https://github.com/DariusBxsci/UAV-SAR-Radar-beta/tree/feat/GUI',
+                    label: 'GitHub',
+                    src: github,
+                },
+            ],
+            icons: [
+                {
+                    label: 'Python',
+                    src: python,
+                },
+            ],
+            buttonLink: null,
+            buttonLabel: null,
+            description: [
+                {
+                    line: 'This graphical user interface was developed for the sole use alongside a synthetic-aperture radar (SAR) project at MIT during Beaver Works Summer Institute 2018.',
+                },
+                {
+                    line: 'The Python TKinter desktop application is able to connect to a PulsON 440 Ranging and Radar Module to start and stop radar collection. It can also generate and visualize heatmaps using NumPy and Matplotlib.'
+                }
+            ]
         },
     ]
 }
