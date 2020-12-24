@@ -243,7 +243,7 @@ const data = {
                     line: 'Users create paths by placing points on a coordinate plane. These coordinate sets are then saved as \"paths\" that can be flown on a DJI Tello connected via Wi-Fi.',
                 },
                 {
-                    line: 'The app code is written in Java, and the flight controles are written in Go using Gobot drivers.'
+                    line: 'The app code is written in Java, and the flight controls are written in Go using Gobot drivers.'
                 }
             ]
         },
