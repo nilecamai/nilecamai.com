@@ -34,15 +34,25 @@ function Project(props) {
         })
     }
 
+    let renderedDescription;
+
+    if (project.description) {
+        renderedDescription = project.description.map(paragraph => {
+            return <p className="n-card-subtitle">{paragraph.line}</p>
+        })
+    }
+
     return(
         <animated.div className="n-project-container">
             <Row>
                 <Col className="justify-content-center">
                     <Row className="justify-content-center">
                         <img className="n-project-image" src={project.imgSrc} />
-                        <Button className="n-project-button" variant="outline-primary" href={project.buttonLink}>
-                            {project.buttonLabel}
-                        </Button>
+                        { project.buttonLabel &&
+                            <Button className="n-project-button" variant="outline-primary" href={project.buttonLink}>
+                                {project.buttonLabel}
+                            </Button>
+                        }
                     </Row>
                 </Col>
                 <Col className="n-project-text">
@@ -60,7 +70,7 @@ function Project(props) {
                             {renderedToolIcons}
                         </span>
                     }
-                    <p className="n-card-subtitle">{project.description}</p>
+                    {renderedDescription}
                 </Col>
             </Row>
         </animated.div>
