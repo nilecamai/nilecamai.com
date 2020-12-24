@@ -1,7 +1,8 @@
 import React from 'react';
-import { Container, Row, Col, Button } from 'react-bootstrap'; 
+import { Container, Row, Col, Button } from 'react-bootstrap';
 
 import { useSpring, animated } from 'react-spring';
+import { isMobile } from 'react-device-detect';
 
 function Project(props) {
 
@@ -39,7 +40,7 @@ function Project(props) {
                 <Col className="justify-content-center">
                     <Row className="justify-content-center">
                         <img className="n-project-image" src={project.imgSrc} />
-                        <Button className="n-project-button" variant="outline-primary">
+                        <Button className="n-project-button" variant="outline-primary" href={project.buttonLink}>
                             {project.buttonLabel}
                         </Button>
                     </Row>
@@ -47,11 +48,18 @@ function Project(props) {
                 <Col className="n-project-text">
                     <p className="n-card-title">
                         {project.title}
+                        { !isMobile && 
+                            <span className="float-right">
+                                {renderedToolIcons}
+                            </span>
+                        }
+                    </p>
+                    {renderedLinks}
+                    { isMobile && 
                         <span className="float-right">
                             {renderedToolIcons}
                         </span>
-                    </p>
-                    {renderedLinks}
+                    }
                     <p className="n-card-subtitle">{project.description}</p>
                 </Col>
             </Row>
