@@ -17,6 +17,22 @@ function Project(props) {
 
     const project = props.project;
 
+    let renderedToolIcons;
+
+    if (project.icons) {
+        renderedToolIcons = project.icons.map(icon => {
+            return <animated.img className="n-icon" src={icon.src} title={"Built with " + icon.label} />
+        })
+    }
+
+    let renderedLinks;
+
+    if (project.links) {
+        renderedLinks = project.links.map(link => {
+            return <span className="n-span"><a className="text-dark" href={link.url}><img className="n-icon" src={link.src}/>{link.label}</a></span>
+        })
+    }
+
     return(
         <animated.div className="n-project-container">
             <Row>
@@ -29,7 +45,13 @@ function Project(props) {
                     </Row>
                 </Col>
                 <Col className="n-project-text">
-                    <p className="n-card-title">{project.title}</p>
+                    <p className="n-card-title">
+                        {project.title}
+                        <span className="float-right">
+                            {renderedToolIcons}
+                        </span>
+                    </p>
+                    {renderedLinks}
                     <p className="n-card-subtitle">{project.description}</p>
                 </Col>
             </Row>
