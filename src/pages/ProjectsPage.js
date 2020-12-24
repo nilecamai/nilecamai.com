@@ -15,7 +15,9 @@ function ProjectsPage(props) {
         <animated.div style={style}>
             <Hero title={props.title} imgSrc={props.imgSrc} />
             <Content>
-                <Project project={projects[0]}></Project>
+                {
+                    projects.map(project => <Project project={project} />)
+                }
             </Content>
         </animated.div>  
     );
