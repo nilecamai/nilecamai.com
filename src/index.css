@@ -100,7 +100,7 @@ code {
 
 .n-card-subtitle {
   font-size: 16px;
-  margin: 0px;
+  margin-top: 1em;
   color: #212529;
 }
 
@@ -213,4 +213,46 @@ li.nostyle {
 
 .n-carousel {
   padding: 5rem;
+}
+
+.n-project-container {
+  min-width: 50vw;
+  max-width: 90vw;
+  padding: 2rem;
+  margin-bottom: 2rem;
+
+  
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+}
+
+.n-project-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 3px 1px #ccc;
+  object-fit: cover;
+}
+
+.n-project-text {
+  flex-grow: 3 !important;
+}
+
+.n-project-left {
+  justify-content: center;
+  display: block;
+}
+
+.n-project-button {
+  width: 200px;
+  display: block;
+  margin-top: 1rem;
+}
+
+.n-icon {
+  height: 1rem;
+  margin: 0 0.4rem 0.2rem 0.1rem;
+}
+
+.n-span {
+  margin-right: 3rem;
 }
