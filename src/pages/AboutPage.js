@@ -7,11 +7,13 @@ import data from '../data/data';
 
 function AboutPage(props) {
 
+    const page = props.page;
+
     const style = useSpring(data.fadeIn)
 
     return(
         <animated.div style={style}>
-            <Hero title={props.title} imgSrc={props.imgSrc} />
+            <Hero title={page.title} imgSrc={page.imgSrc} />
             <Content>
                 {data.about}
             </Content>

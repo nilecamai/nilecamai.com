@@ -7,6 +7,8 @@ import data from '../data/data';
 
 function HomePage(props) {
 
+    const page = props.page;
+
     // fade style
     const style = useSpring(data.fadeIn)
 

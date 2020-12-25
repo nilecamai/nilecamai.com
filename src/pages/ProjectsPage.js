@@ -8,12 +8,14 @@ import data from '../data/data';
 
 function ProjectsPage(props) {
 
+    const page = props.page;
+
     const style = useSpring(data.fadeIn);
     const projects = data.projects;
 
     return(
         <animated.div style={style}>
-            <Hero title={props.title} imgSrc={props.imgSrc} />
+            <Hero title={page.title} imgSrc={page.imgSrc} />
             <Content>
                 {
                     projects.map(project => <Project project={project} />)

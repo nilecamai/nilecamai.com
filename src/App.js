@@ -44,9 +44,9 @@ class App extends React.Component {
           </Navbar>
 
           <Route path={pages[0].path} exact render={() => <HomePage /> } />
-          <Route path={pages[1].path} render={() => <AboutPage title={pages[1].title} imgSrc={pages[1].imgSrc} /> } />
-          <Route path={pages[2].path} render={() => <ProjectsPage title={pages[2].title} /> } />
-          <Route path={pages[3].path} render={() => <ContactPage title={pages[3].title} /> } />
+          <Route path={pages[1].path} render={() => <AboutPage page={pages[1]} /> } />
+          <Route path={pages[2].path} render={() => <ProjectsPage page={pages[2]} /> } />
+          <Route path={pages[3].path} render={() => <ContactPage page={pages[3]} /> } />
 
           <Footer />
 
