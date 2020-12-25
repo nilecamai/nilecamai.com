@@ -17,23 +17,20 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      title: 'Nile Camai',
-      // navbar
+      title: data.title,
       pages: data.pages,
-      homepage: data.homepage
     }
   }
   
   render() {
 
     const pages = this.state.pages;
-    const homepage = this.state.homepage;
 
     return(
       <HashRouter>
         <Container className="p-0" fluid={true}>
           <Navbar sticky="top" className="border-bottom" bg="white" expand="lg">
-            <Navbar.Brand>Nile Camai</Navbar.Brand>
+            <Navbar.Brand>{data.title}</Navbar.Brand>
 
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle"/>
             <Navbar.Collapse id="navbar-toggle">

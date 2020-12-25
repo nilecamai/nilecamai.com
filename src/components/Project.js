@@ -6,16 +6,6 @@ import { isMobile } from 'react-device-detect';
 
 function Project(props) {
 
-    /* const {
-        title,
-        imgSrc,
-        links,
-        icons,
-        buttonLink,
-        buttonLabel,
-        description
-    } = props.project; */
-
     const project = props.project;
 
     let renderedToolIcons;
@@ -31,14 +21,6 @@ function Project(props) {
     if (project.links) {
         renderedLinks = project.links.map(link => {
             return <span className="n-span"><a className="text-dark" href={link.url}><img className="n-icon" src={link.src}/>{link.label}</a></span>
-        })
-    }
-
-    let renderedDescription;
-
-    if (project.description) {
-        renderedDescription = project.description.map(paragraph => {
-            return <p className="n-card-subtitle">{paragraph.line}</p>
         })
     }
 
@@ -70,7 +52,9 @@ function Project(props) {
                             {renderedToolIcons}
                         </span>
                     }
-                    {renderedDescription}
+                    <div className="py-3">
+                        {project.description}
+                    </div>
                 </Col>
             </Row>
         </animated.div>

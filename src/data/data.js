@@ -1,3 +1,5 @@
+import React from 'react';
+
 // Home page slides
 import bgImg1 from '../assets/images/cityWaterfront.jpg';
 import bgImg2 from '../assets/images/robo1.JPG';
@@ -31,12 +33,12 @@ import sarGui from '../assets/images/sarGui.gif';
 
 const data = {
 
+    "title": 'Nile Camai',
+
     "fadeIn": {
         opacity: 1,
         from: { opacity: 0 },
     },
-
-    "homepage": 'nilec',
 
     "pages": [
         {
@@ -126,7 +128,7 @@ const data = {
         }
     ],
 
-    "projects" : [
+    "projects": [
         {
             title: 'Poker Chips Simulator',
             imgSrc: pokerChipsSimulatorSq,
@@ -154,17 +156,13 @@ const data = {
             ],
             buttonLink: 'http://34.221.107.58:3000/',
             buttonLabel: 'Try it out!',
-            description: [
-                {
-                    line: 'Ever wanted to play a thrilling game of Texas Hold\'em, but forgot to bring the chips? This .io web application solves that problem by using virtual currency with familiar betting rules to play together.',
-                },
-                {
-                    line: 'The host can create a lobby with 3-5 players and have their friends join with a four-digit room code. The game will then handle player balances, the pot, the ante, and the turns according to Texas Hold\'em rules.',
-                },
-                {
-                    line: 'This project was a collaboration with classmates Kelvin Ng and Winston Bullen for our CSE143 final project.',
-                },
-            ]
+            description: (
+                <div>
+                    <p>Ever wanted to play a thrilling game of Texas Hold'em, but forgot to bring the chips? This .io web application solves that problem by using virtual currency with familiar betting rules to play together.</p>
+                    <p>The host can create a lobby with 3-5 players and have their friends join with a four-digit room code. The game will then handle player balances, the pot, the ante, and the turns according to Texas Hold'em rules.</p>
+                    <p>This project was a collaboration with classmates Kelvin Ng and Winston Bullen for our CSE143 final project.</p>
+                </div>
+            )
         },
         {
             title: 'FaceMe',
@@ -197,17 +195,13 @@ const data = {
             ],
             buttonLink: null,
             buttonLabel: null,
-            description: [
-                {
-                    line: 'With the lockdown and stay-at-home orders, connecting with people is more important than ever. However, some of our loved ones aren\'t the most tech-savvy with video conferencing apps.',
-                },
-                {
-                    line: 'FaceMe is a tool that aims to make video calls more accessible. With the help of the OpenCV and Google Cloud libraries, the application uses audio signals, visual cues, and speech commands as accessibility features.'
-                },
-                {
-                    line: 'This project was a collaboration with teammates Kelvin Ng, Devesh Sarda, Tenzin Low, and Nikola Bojanic as a submission to DubHacks 2020. It won Best Use of Google Cloud and Best First-Time Hack.'
-                }
-            ]
+            description: (
+                <div>
+                    <p>With the lockdown and stay-at-home orders, connecting with people is more important than ever. However, some of our loved ones aren't the most tech-savvy with video conferencing apps.</p>
+                    <p>FaceMe is a tool that aims to make video calls more accessible. With the help of the OpenCV and Google Cloud libraries, the application uses audio signals, visual cues, and speech commands as accessibility features.</p>
+                    <p>This project was a collaboration with teammates Kelvin Ng, Devesh Sarda, Tenzin Low, and Nikola Bojanic as a submission to DubHacks 2020. It won Best Use of Google Cloud and Best First-Time Hack.</p>
+                </div>
+            )
         },
         {
             title: 'TelloMapper',
@@ -235,17 +229,13 @@ const data = {
             ],
             buttonLink: null,
             buttonLabel: null,
-            description: [
-                {
-                    line: 'TelloMapper is an Android application that connects to a DJI Tello drone to control its movement.',
-                },
-                {
-                    line: 'Users create paths by placing points on a coordinate plane. These coordinate sets are then saved as \"paths\" that can be flown on a DJI Tello connected via Wi-Fi.',
-                },
-                {
-                    line: 'The app code is written in Java, and the flight controls are written in Go using Gobot drivers.'
-                }
-            ]
+            description: (
+                <div>
+                    <p>TelloMapper is an Android application that connects to a DJI Tello drone to control its movement.</p>
+                    <p>Users create paths by placing points on a coordinate plane. These coordinate sets are then saved as "paths" that can be flown on a DJI Tello connected via Wi-Fi.</p>
+                    <p>The app code is written in Java, and the flight controls are written in Go using Gobot drivers.</p>
+                </div>
+            )
         },
         {
             title: 'Synthetic Aperture Radar (SAR) GUI',
@@ -265,16 +255,33 @@ const data = {
             ],
             buttonLink: null,
             buttonLabel: null,
-            description: [
-                {
-                    line: 'This graphical user interface was developed for the sole use alongside a synthetic-aperture radar (SAR) project at MIT during Beaver Works Summer Institute 2018.',
-                },
-                {
-                    line: 'The Python TKinter desktop application is able to connect to a PulsON 440 Ranging and Radar Module to start and stop radar collection. It can also generate and visualize heatmaps using NumPy and Matplotlib.'
-                }
-            ]
+            description: (
+                <div>
+                    <p>This graphical user interface was developed for the sole use alongside a synthetic-aperture radar (SAR) project at MIT during Beaver Works Summer Institute 2018.</p>
+                    <p>The Python TKinter desktop application is able to connect to a PulsON 440 Ranging and Radar Module to start and stop radar collection. It can also generate and visualize heatmaps using NumPy and Matplotlib.</p>
+                </div>
+            )
         },
-    ]
+    ],
+
+    "about": (
+        <div>
+            <p>Pleased to meet you! My name is Nile Camai, and I'm a Computer Science student at the <strong className="uw-brand-color">University of Washington</strong>. I was born and raised on the Sammamish plateau and am lucky to call the great PNW my home for the next four years!</p>
+            <p>Whether it's hardware or software, I love to build things. I participated for four years in the <strong className="frc-brand-color">FIRST® Robotics Competition</strong> as a mechanical team member of the <strong className="shs-brand-color">Spartabots</strong>. Behind the computer screen, I've developed applications with Android, SwiftUI, and Node.js.</p>
+            <p>My latest project, built on SocketIO and Express.js, is a multiplayer web game, Poker Chip Simulator. I collaborated with fellow Allen School students Kelvin Ng and Winston Bullen on this project.</p>
+            <p>When I'm not coding, I love buying boba, making boba, and drinking boba. Other interests of mine include music, film, photography, and gaming. I like trying new things, seeking discomfort, and making the most out of life.</p>
+            <p>On to the next!</p>
+        </div>
+    ),
+
+    "footer": {
+        copyright: "© 2020 by Nile Camai",
+        socials: [
+            "https://linkedin.com/in/nile-camai",
+            "https://github.com/nilecamai"
+        ],
+        footnote: "Created with love by Nile Camai"
+    }
 }
 
 export default data;
