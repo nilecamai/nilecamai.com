@@ -5,7 +5,7 @@ import { isMobile } from 'react-device-detect';
 import data from '../data/data';
 
 let socialIcons = (
-    <Col className="p-0 n-justify-center justify-content-between" md={3} sm={12}>
+    <Col className="p-0 justify-content-between" md={3} sm={12}>
         <span className="d-flex justify-content-center">
             {
                 data.footer.socials.map(link => {
