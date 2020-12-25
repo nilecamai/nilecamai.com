@@ -13,7 +13,7 @@ function ContactPage(props) {
 
     return(
         <animated.div style={style}>
-            <Hero title={page.title} subTitle={page.subTitle} imgSrc={page.imgSrc} />
+            <Hero hero={page.hero} />
             <Content>
                 <p>Test</p>
             </Content>

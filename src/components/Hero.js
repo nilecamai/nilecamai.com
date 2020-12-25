@@ -4,10 +4,12 @@ import { isMobile } from 'react-device-detect';
 
 function Hero(props) {
 
+    const hero = props.hero;
+
     const titleFont = isMobile ? "display-3 text-center" : "display-1";
 
     const image =   <Row className="justify-content-center flex-grow-0">
-                        { props.imgSrc != null && <img className="n-hero-image" src={props.imgSrc} alt={props.imgSrc} />}
+                        { hero.imgSrc != null && <img className="n-hero-image" src={hero.imgSrc} alt={hero.imgSrc} />}
                     </Row>
 
     return(
@@ -18,9 +20,9 @@ function Hero(props) {
                         <Container fluid={true}>
                             <Row className="d-flex justify-content-between">
                                 <Col className="justify-content-center d-flex flex-column p-0">
-                                    { props.title && <h1 className={titleFont}>{props.title}</h1> }
-                                    { props.subTitle && <h3 className="display-4 font-weight-light">{props.subTitle}</h3> }
-                                    { props.bodyText && <h3 className="lead font-weight-light">{props.bodyText}</h3> }
+                                    { hero.title && <h1 className={titleFont}>{hero.title}</h1> }
+                                    { hero.subTitle && <h3 className="display-4 font-weight-light">{hero.subTitle}</h3> }
+                                    { hero.bodyText && <h3 className="lead font-weight-light">{hero.bodyText}</h3> }
                                 </Col>
                                 { !isMobile && image }
                             </Row>

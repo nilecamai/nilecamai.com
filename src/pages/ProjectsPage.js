@@ -15,7 +15,7 @@ function ProjectsPage(props) {
 
     return(
         <animated.div style={style}>
-            <Hero title={page.title} imgSrc={page.imgSrc} />
+            <Hero hero={page.hero} />
             <Content>
                 {
                     projects.map(project => <Project project={project} />)

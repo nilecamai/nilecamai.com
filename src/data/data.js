@@ -44,25 +44,29 @@ const data = {
         {
             nav: 'Home',
             path: '/',
-            title: 'Hi there.',
-            subTitle: 'I\'m Nile',
-            bodyText: 'uw student lol',
         },
         {
             nav: 'About',
             path: '/about',
-            title: 'About Me',
-            imgSrc: portrait
+            hero: {
+                title: 'About Me',
+                imgSrc: portrait
+            }
         },
         {
             nav: 'Projects',
             path: '/projects',
-            title: 'Projects'
+            hero: {
+                title: 'Projects'
+            }
         },
         {
             nav: 'Contact',
             path: '/contact',
-            title: 'hmu'
+            hero: {
+                title: 'Let\'s connect!',
+                bodyText: 'Leave a message and I will get back to you as soon as possible.'
+            }
         }
     ],
 
