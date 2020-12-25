@@ -256,3 +256,16 @@ li.nostyle {
 .n-span {
   margin-right: 1rem;
 }
+
+.n-footer {
+  justify-content: space-between;
+}
+
+.n-social-icon {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.n-social-icon:hover {
+  opacity: 1;
+}
