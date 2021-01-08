@@ -36,12 +36,12 @@ const Slide = ({property}) => {
                                 </Link>
                             }
                             { secondButtonLabel != null && 
-                                <Link to={secondButtonLink}>
+                                <a href={secondButtonLink}>
                                     <Button variant="outline-secondary">
                                         {secondButtonLabel}
                                     </Button>
                                     <img src={secondButtonIconSrc} />
-                                </Link>
+                                </a>
                             }
                         </div>
                     </div>
