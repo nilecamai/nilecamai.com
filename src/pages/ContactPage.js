@@ -15,7 +15,6 @@ function ContactPage(props) {
         <animated.div style={style}>
             <Hero hero={page.hero} />
             <Content>
-                <p>Test</p>
             </Content>
         </animated.div>  
     );
