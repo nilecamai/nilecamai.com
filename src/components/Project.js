@@ -33,6 +33,9 @@ function Project(props) {
                         {project.buttonLabel}
                     </Button>
                 }
+                { project.imageButton &&
+                    <a href={project.imageButton.link}><img alt={project.imageButton.alt} src={project.imageButton.imgSrc} className="n-project-button"/></a>
+                }
             </Row>
         </Col>
     )

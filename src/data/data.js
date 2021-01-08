@@ -235,6 +235,11 @@ const data = {
             ],
             buttonLink: null,
             buttonLabel: null,
+            imageButton: {
+                link: 'https://play.google.com/store/apps/details?id=riverflow.tellomapper&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1',
+                alt: 'Get it on Google Play',
+                imgSrc: 'https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png',
+            },
             description: (
                 <div>
                     <p>TelloMapper is an Android application that connects to a DJI Tello drone to control its movement.</p>
