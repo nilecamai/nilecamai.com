@@ -4,6 +4,7 @@ import React from 'react';
 import bgImg1 from '../assets/images/cityWaterfront.jpg';
 import bgImg2 from '../assets/images/robo1.JPG';
 import bgImg3 from '../assets/images/bwPortrait.jpg';
+import resume from '../documents/resume.pdf'
 
 // About page picture
 import portrait from '../assets/images/portrait.jpg';
@@ -65,6 +66,7 @@ const data = {
             path: '/contact',
             hero: {
                 title: 'Let\'s connect!',
+                subTitle: 'nilec@uw.edu',
                 bodyText: 'Leave a message and I will get back to you as soon as possible.'
             }
         }
@@ -79,9 +81,9 @@ const data = {
             firstButtonLabel: 'About me',
             firstButtonIconSrc: '',
             firstButtonLink: '/about',
-            secondButtonLabel: 'View CV',
+            secondButtonLabel: 'Resume',
             secondButtonIconSrc: '',
-            secondButtonLink: '',
+            secondButtonLink: resume,
             bgImgSrc: bgImg1
         },
         {
@@ -127,7 +129,7 @@ const data = {
             title: 'Tello Mapper',
             subTitle: 'Map paths and autonomously fly your DJI Tello with this Android application.',
             imgSrc: telloMapperCard,
-            link: 'https://google.com',
+            link: 'https://github.com/nilecamai/TelloMapper',
             selected: false
         }
     ],
