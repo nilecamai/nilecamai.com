@@ -24,19 +24,28 @@ function Project(props) {
         })
     }
 
+    let projectHero = (
+        <Col className="justify-content-center">
+            <Row className="justify-content-center">
+                <img className="n-project-image" src={project.imgSrc} />
+                { project.buttonLabel &&
+                    <Button className="n-project-button" variant="outline-primary" href={project.buttonLink}>
+                        {project.buttonLabel}
+                    </Button>
+                }
+            </Row>
+        </Col>
+    )
+
     return(
         <animated.div className="n-project-container">
+            { isMobile && 
+                <Row className="py-3">
+                    { projectHero }
+                </Row> 
+            }
             <Row>
-                <Col className="justify-content-center">
-                    <Row className="justify-content-center">
-                        <img className="n-project-image" src={project.imgSrc} />
-                        { project.buttonLabel &&
-                            <Button className="n-project-button" variant="outline-primary" href={project.buttonLink}>
-                                {project.buttonLabel}
-                            </Button>
-                        }
-                    </Row>
-                </Col>
+                { !isMobile && projectHero }
                 <Col className="n-project-text">
                     <p className="n-card-title">
                         {project.title}
