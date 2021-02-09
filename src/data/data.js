@@ -76,7 +76,7 @@ const data = {
     "slides": [
         {
             id: 0,
-            title: 'I am Nile Camai',
+            title: 'I am not Nile Camai',
             bodyText: 'a Computer Science student at the University of Washington',
             firstButtonLabel: 'About me',
             firstButtonIconSrc: '',
