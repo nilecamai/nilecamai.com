@@ -11,6 +11,7 @@ import ContactPage from './pages/ContactPage';
 
 import data from './data/data';
 import ProjectsPage from './pages/ProjectsPage';
+import logo from './assets/images/logo192.png';
 
 class App extends React.Component {
 
@@ -30,7 +31,10 @@ class App extends React.Component {
       <HashRouter>
         <Container className="p-0" fluid={true}>
           <Navbar sticky="top" className="border-bottom" bg="white" expand="lg">
-            <Navbar.Brand>{data.title}</Navbar.Brand>
+            <Navbar.Brand>
+              {data.title}
+              <img src={logo} style={{height: "2rem", marginBottom: "0.25rem"}}/>
+            </Navbar.Brand>
 
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle"/>
             <Navbar.Collapse id="navbar-toggle">

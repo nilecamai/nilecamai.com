@@ -8,6 +8,10 @@ import resume from '../documents/resume.pdf'
 
 // About page picture
 import portrait from '../assets/images/portrait.jpg';
+import portrait2 from '../assets/images/portrait2.jpg';
+
+// Contact page picture
+import cityCorner from '../assets/images/cityCorner.jpg'
 
 // Home page carousel
 import pokerChipsSimulatorCard from '../assets/images/pokerChipsSimulatorCard.png';
@@ -66,8 +70,9 @@ const data = {
             path: '/contact',
             hero: {
                 title: 'Let\'s connect!',
-                subTitle: 'nilec@uw.edu',
-                bodyText: 'Leave a message and I will get back to you as soon as possible.'
+                subTitle: 'nilec@cs.washington.edu',
+                bodyText: 'Leave a message and I will get back to you as soon as possible.',
+                imgSrc: cityCorner
             }
         }
     ],
@@ -77,7 +82,7 @@ const data = {
         {
             id: 0,
             title: 'I am Nile Camai',
-            bodyText: 'a Computer Science student at the University of Washington',
+            bodyText: 'a Computer Science student and teaching assistant at the University of Washington',
             firstButtonLabel: 'About me',
             firstButtonIconSrc: '',
             firstButtonLink: '/about',
@@ -277,21 +282,68 @@ const data = {
 
     "about": (
         <div>
-            <p>Pleased to meet you! My name is Nile Camai, and I'm a Computer Science student at the <strong className="uw-brand-color">University of Washington</strong>. I was born and raised on the Sammamish plateau and am lucky to call the great PNW my home for the next four years!</p>
-            <p>Whether it's hardware or software, I love to build things. I participated for four years in the <strong className="frc-brand-color">FIRST® Robotics Competition</strong> as a mechanical team member of the <strong className="shs-brand-color">Spartabots</strong>. Behind the computer screen, I've developed applications with Android, SwiftUI, and Node.js.</p>
-            <p>My latest project, built on SocketIO and Express.js, is a multiplayer web game, Poker Chip Simulator. I collaborated with fellow Allen School students Kelvin Ng and Winston Bullen on this project.</p>
-            <p>When I'm not coding, I love buying boba, making boba, and drinking boba. Other interests of mine include music, film, photography, and gaming. I like trying new things, seeking discomfort, and making the most out of life.</p>
+            <p>Pleased to meet you! My name is Nile Camai, and I'm a Computer 
+                Science student and undergraduate teaching assistant at the 
+                <strong className="uw-brand-color"> University of Washington</strong>. 
+                I was born and raised on the Sammamish plateau and am lucky to 
+                call the great PNW my home for these next four years.
+            </p>
+            <h4>
+                Why CS?
+            </h4>
+            <p>I love the idea of building impactful technologies ranging in 
+                application from the device in your pocket to the next greatest
+                innovation in robotics. I hope that the fusion of logical and
+                creative thinking that defines computer science can spark 
+                interest in others, too!
+            </p>
+            <h4>
+                What's Nile up to?
+            </h4>
+            <p>
+                I am currently looking forward to my future appointment at 
+                <strong className="google-blue"> Google </strong> as a
+                STEP Intern this coming summer.
+            </p>
+            <p>
+                I am a member of 
+                <strong className="aruw-brand-color"> Advanced Robotics at the University
+                of Washington </strong>
+                (ARUW).
+                As a control systems developer, I contribute to the codebase
+                that makes our RoboMaster league robots competition-ready.
+            </p>
+            <p>
+                I am also an undergraduate teaching assistant for 
+                <em> CSE 142: Computer Programming I </em> and
+                <em> CSE 143: Computer Programming II</em>,
+                the introductory Java programming courses at UW.
+            </p>
+            <p>My latest project, built on Java, React.js, and Spark, is a 
+                pathfinding web application named 
+                <em> Campus Paths</em>. As the name suggests, the application is
+                designed to help UW students find the fastest paths between 
+                buildings on campus. In this culminating project for
+                <em> CSE 331: Software Design &amp; Implementation, </em>
+                I independently implemented several abstract data types and 
+                Dijkstra's algorithm underneath a frontend layer of TypeScript React.
+            </p>
+            <p>When I'm not coding, I love buying boba, making boba, and 
+                drinking boba. Other interests of mine include music, cuisine, 
+                photography, and gaming. I like trying new things, seeking 
+                discomfort, and making the most out of life.
+            </p>
             <p>On to the next!</p>
         </div>
     ),
 
     "footer": {
-        copyright: "© 2020 by Nile Camai",
+        copyright: "© 2021 by Nile Camai",
         socials: [
             "https://linkedin.com/in/nile-camai",
             "https://github.com/nilecamai"
         ],
-        footnote: "Created with love by Nile Camai"
+        footnote: "Created with love and spare time by Nile Camai"
     }
 }
 

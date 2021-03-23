@@ -28,10 +28,18 @@ code {
   color: #0066B3;
 }
 
+.aruw-brand-color {
+  color: #4f4f4f;
+}
+
+.google-blue {
+  color: #4285f4;
+}
+
 .n-hero-image {
   border-radius: 150px;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   box-shadow: 0px 0px 3px 1px #ccc;
   object-fit: cover;
 }
