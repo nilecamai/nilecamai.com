@@ -38,7 +38,7 @@ import sarGui from '../assets/images/sarGui.gif';
 
 const data = {
 
-    "title": 'Nile Camai',
+    "title": 'nilecamai.me',
 
     "fadeIn": {
         opacity: 1,
@@ -82,7 +82,7 @@ const data = {
         {
             id: 0,
             title: 'I am Nile Camai',
-            bodyText: 'a Computer Science student and teaching assistant at the University of Washington',
+            bodyText: 'a Computer Science student at the University of Washington',
             firstButtonLabel: 'About me',
             firstButtonIconSrc: '',
             firstButtonLink: '/about',
@@ -134,7 +134,7 @@ const data = {
             title: 'Tello Mapper',
             subTitle: 'Map paths and autonomously fly your DJI Tello with this Android application.',
             imgSrc: telloMapperCard,
-            link: 'https://github.com/nilecamai/TelloMapper',
+            link: 'https://play.google.com/store/apps/details?id=riverflow.tellomapper',
             selected: false
         }
     ],
@@ -165,8 +165,8 @@ const data = {
                     src: socket_io,
                 },
             ],
-            buttonLink: 'http://34.221.107.58:3000/',
-            buttonLabel: 'Try it out!',
+            buttonLink: 'http://54.218.193.60:3000/',
+            buttonLabel: '', // TODO: update link and label when online: 'Try it out!'
             description: (
                 <div>
                     <p>Ever wanted to play a thrilling game of Texas Hold'em, but forgot to bring the chips? This .io web application solves that problem by using virtual currency with familiar betting rules to play together.</p>
@@ -258,7 +258,7 @@ const data = {
             imgSrc: sarGui,
             links: [
                 {
-                    url: 'https://github.com/DariusBxsci/UAV-SAR-Radar-beta/tree/feat/GUI',
+                    url: 'https://github.com/nilecamai/UAV-SAR/',
                     label: 'GitHub',
                     src: github,
                 },
@@ -282,42 +282,37 @@ const data = {
 
     "about": (
         <div>
-            <p>Pleased to meet you! My name is Nile Camai, and I'm a Computer 
+            <p>Pleased to meet you! My name is <strong> Nile Camai</strong>, and I'm a Computer 
                 Science student and undergraduate teaching assistant at the 
                 <strong className="uw-brand-color"> University of Washington</strong>. 
                 I was born and raised on the Sammamish plateau and am lucky to 
-                call the great PNW my home for these next four years.
+                call the great <strong style={{color: "green"}}> PNW </strong> my home for these next four years.
             </p>
             <h4>
                 Why CS?
             </h4>
-            <p>I love the idea of building impactful technologies ranging in 
-                application from the device in your pocket to the next greatest
-                innovation in robotics. I hope that the fusion of logical and
-                creative thinking that defines computer science can spark 
-                interest in others, too!
+            <p>I love the possibility of building technologies ranging in 
+                impact from the apps on the device in your pocket 
+                to the next greatest innovation in exploratory robotics. 
+                I hope that the fusion of logical and creative thinking that 
+                defines computer science can spark interest in others, too!
             </p>
             <h4>
                 What's Nile up to?
             </h4>
             <p>
-                I am currently looking forward to my future appointment at 
-                <strong className="google-blue"> Google </strong> as a
-                STEP Intern this coming summer.
+                I am currently a STEP intern at 
+                <strong className="google-blue"> Google </strong>! #noogler
             </p>
             <p>
-                I am a member of 
-                <strong className="aruw-brand-color"> Advanced Robotics at the University
-                of Washington </strong>
-                (ARUW).
-                As a control systems developer, I contribute to the codebase
-                that makes our RoboMaster league robots competition-ready.
-            </p>
-            <p>
-                I am also an undergraduate teaching assistant for 
+                Currently, I am an undergraduate teaching assistant for 
                 <em> CSE 142: Computer Programming I </em> and
                 <em> CSE 143: Computer Programming II</em>,
                 the introductory Java programming courses at UW.
+                I also participate in 
+                <strong className="aruw-brand-color"> Advanced Robotics at the University
+                of Washington </strong>
+                (ARUW) as a Controls team member.
             </p>
             <p>My latest project, built on Java, React.js, and Spark, is a 
                 pathfinding web application named 
@@ -328,9 +323,11 @@ const data = {
                 I independently implemented several abstract data types and 
                 Dijkstra's algorithm underneath a frontend layer of TypeScript React.
             </p>
-            <p>When I'm not coding, I love buying boba, making boba, and 
-                drinking boba. Other interests of mine include music, cuisine, 
-                photography, and gaming. I like trying new things, seeking 
+            <p>When I'm not coding, I love to sleep. Other lesser-ranked pastimes of mine include 
+                struggling to cook, crafting eccentrically-titled Spotify playlists, 
+                playing Franz Liszt's Hungarian Rhapsody No. 15: <em> "Rákóczi March" </em>
+                for the ten-thousandth time, and
+                "casually" gaming. I like trying new things, seeking 
                 discomfort, and making the most out of life.
             </p>
             <p>On to the next!</p>
@@ -343,7 +340,7 @@ const data = {
             "https://linkedin.com/in/nile-camai",
             "https://github.com/nilecamai"
         ],
-        footnote: "Created with love and spare time by Nile Camai"
+        footnote: "Created with matcha 🍵 love ❤ by Nile Camai"
     }
 }
 
