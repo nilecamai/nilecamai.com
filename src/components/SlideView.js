@@ -40,11 +40,13 @@ export default function SlideView() {
                     })}
                 </div>
                 
-                <div className="n-slides-control">
-                    <span onClick={SetSlide(0)} className="n-dot"></span>
-                    <span onClick={SetSlide(1)} className="n-dot"></span>
-                    <span onClick={SetSlide(2)} className="n-dot"></span>
-                </div>
+                { !isMobile && 
+                    <div className="n-slides-control">
+                        <span onClick={SetSlide(0)} className="n-dot"></span>
+                        <span onClick={SetSlide(1)} className="n-dot"></span>
+                        <span onClick={SetSlide(2)} className="n-dot"></span>
+                    </div>
+                }
             </div>
         </div>
     );

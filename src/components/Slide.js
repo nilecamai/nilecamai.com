@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Button } from 'react-bootstrap';
 import { HashRouter, Route, Link } from 'react-router-dom';
+import { isMobile } from 'react-device-detect';
 
 const Slide = ({property}) => {
 
@@ -22,10 +23,10 @@ const Slide = ({property}) => {
         <HashRouter>
             <div id={'slide-${id}'} className="n-slide">
                 <img className="n-slide-image" src={bgImgSrc} alt={bgImgSrc} />
-                <div className="n-slide-card">
+                <div className={ isMobile ? "n-slide-card-mobile" : "n-slide-card" }>
                     <div className="n-slide-info">
-                        <p className="n-slide-title">{title}</p>
-                        <p className="n-slide-body">{bodyText}</p>
+                        <p className={ isMobile ? "n-slide-title-mobile" : "n-slide-title" }>{title}</p>
+                        <p className={ isMobile ? "n-slide-body-mobile" : "n-slide-body" }>{bodyText}</p>
                         <div className="n-slide-card-buttons">
                             { firstButtonLabel != null && 
                                 <Link to={firstButtonLink}>
