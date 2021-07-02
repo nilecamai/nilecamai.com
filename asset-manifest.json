@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.88c0b7ce.chunk.css",
-    "main.js": "/static/js/main.450cacee.chunk.js",
-    "main.js.map": "/static/js/main.450cacee.chunk.js.map",
+    "main.js": "/static/js/main.fa860703.chunk.js",
+    "main.js.map": "/static/js/main.fa860703.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.0197b26b.js",
     "runtime-main.js.map": "/static/js/runtime-main.0197b26b.js.map",
     "static/css/2.926dbef4.chunk.css": "/static/css/2.926dbef4.chunk.css",
@@ -31,8 +31,8 @@
     "static/media/portrait2.6f573471.jpg": "/static/media/portrait2.6f573471.jpg",
     "static/media/python.79b1d9b6.svg": "/static/media/python.79b1d9b6.svg",
     "static/media/resume.83555ead.pdf": "/static/media/resume.83555ead.pdf",
-    "static/media/robo1.247b5371.JPG": "/static/media/robo1.247b5371.JPG",
     "static/media/sarGui.e550ef1a.gif": "/static/media/sarGui.e550ef1a.gif",
+    "static/media/setup.a4b48651.jpg": "/static/media/setup.a4b48651.jpg",
     "static/media/socket_io.aa27363b.svg": "/static/media/socket_io.aa27363b.svg",
     "static/media/telloMapper.d54539ae.gif": "/static/media/telloMapper.d54539ae.gif",
     "static/media/telloMapperCard.9ebb2275.png": "/static/media/telloMapperCard.9ebb2275.png"
@@ -42,6 +42,6 @@
     "static/css/2.926dbef4.chunk.css",
     "static/js/2.6524aefe.chunk.js",
     "static/css/main.88c0b7ce.chunk.css",
-    "static/js/main.450cacee.chunk.js"
+    "static/js/main.fa860703.chunk.js"
   ]
 }
