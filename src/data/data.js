@@ -2,13 +2,12 @@ import React from 'react';
 
 // Home page slides
 import bgImg1 from '../assets/images/cityWaterfront.jpg';
-import bgImg2 from '../assets/images/robo1.JPG';
+import bgImg2 from '../assets/images/setup.jpg';
 import bgImg3 from '../assets/images/bwPortrait.jpg';
-import resume from '../documents/resume.pdf'
+import resume from '../assets/documents/resume.pdf'
 
 // About page picture
 import portrait from '../assets/images/portrait.jpg';
-import portrait2 from '../assets/images/portrait2.jpg';
 
 // Contact page picture
 import cityCorner from '../assets/images/cityCorner.jpg'
@@ -283,7 +282,7 @@ const data = {
     "about": (
         <div>
             <p>Pleased to meet you! My name is <strong> Nile Camai</strong>, and I'm a Computer 
-                Science student and undergraduate teaching assistant at the 
+                Science student at the 
                 <strong className="uw-brand-color"> University of Washington</strong>. 
                 I was born and raised on the Sammamish plateau and am lucky to 
                 call the great <strong style={{color: "green"}}> PNW </strong> my home for these next four years.
@@ -301,14 +300,18 @@ const data = {
                 What's Nile up to?
             </h4>
             <p>
-                I am currently a STEP intern at 
-                <strong className="google-blue"> Google </strong>! #noogler
+                I am currently a STEP intern on the Payments team at 
+                <strong className="google-blue"> G</strong>
+                <strong className="google-red">o</strong>
+                <strong className="google-yellow">o</strong>
+                <strong className="google-blue">g</strong>
+                <strong className="google-green">l</strong>
+                <strong className="google-red">e </strong>! #noogler
             </p>
             <p>
-                Currently, I am an undergraduate teaching assistant for 
-                <em> CSE 142: Computer Programming I </em> and
-                <em> CSE 143: Computer Programming II</em>,
-                the introductory Java programming courses at UW.
+                I was previously a CSE 14x teaching assistant at UW and taught 
+                <em> CSE 142: Computer Programming I </em> in Winter 2021 and
+                <em> CSE 143: Computer Programming II</em> in Spring 2021.
                 I also participate in 
                 <strong className="aruw-brand-color"> Advanced Robotics at the University
                 of Washington </strong>

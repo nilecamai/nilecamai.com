@@ -36,6 +36,18 @@ code {
   color: #4285f4;
 }
 
+.google-green {
+  color: #0f9d58;
+}
+
+.google-yellow {
+  color: #f4b400;
+}
+
+.google-red {
+  color: #db4437;
+}
+
 .nav-icon {
   height: 2rem;
   margin-bottom: 0.25rem;
