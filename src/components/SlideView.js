@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect } from 'react';
+import React, { useState, useCallback, useEffect, useRef } from 'react';
 import { useTransition, animated } from 'react-spring';
 import Slide from '../components/Slide';
 import { render } from 'react-dom';
@@ -15,9 +15,12 @@ const slides = [
 export default function SlideView() {
 
     const [index, set] = useState(0);
+    const timeoutRef = useRef(null);
+    const delay = 5000;
+    const platform = isMobile ? "n-slide-mobile" : "n-slide-desktop";
 
-    function SetSlide(index) {
-        return useCallback(() => set(index), [])
+    function SetSlide(slideIndex) {
+        return useCallback(() => set(slideIndex), [])
     }
 
     const transitions = useTransition(index, null, {
@@ -25,10 +28,22 @@ export default function SlideView() {
         enter: { opacity: 1 },
         leave: { opacity: 0 },
     })
-    
-    useEffect(() => void setInterval(() => set(state => (state + 1) % 3), 5000), [])
 
-    const platform = isMobile ? "n-slide-mobile" : "n-slide-desktop";
+    useEffect(() => {
+        resetTimeout();
+        timeoutRef.current = setTimeout(
+            () =>
+                set(state => (state + 1) % 3
+            ),
+            delay
+        );
+    }, [index])
+
+    function resetTimeout() {
+        if (timeoutRef.current) {
+            clearTimeout(timeoutRef.current);
+        }
+    }
 
     return (
         <div className={platform}>
