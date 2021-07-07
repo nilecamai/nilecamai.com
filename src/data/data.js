@@ -50,18 +50,18 @@ const data = {
             path: '/',
         },
         {
+            nav: 'Projects',
+            path: '/projects',
+            hero: {
+                title: 'Projects'
+            }
+        },
+        {
             nav: 'About',
             path: '/about',
             hero: {
                 title: 'About Me',
                 imgSrc: portrait
-            }
-        },
-        {
-            nav: 'Projects',
-            path: '/projects',
-            hero: {
-                title: 'Projects'
             }
         },
     ],

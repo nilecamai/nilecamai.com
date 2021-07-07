@@ -32,8 +32,8 @@ class App extends React.Component {
           <Header pages={pages} />
 
           <Route path={pages[0].path} exact render={() => <HomePage /> } />
-          <Route path={pages[1].path} render={() => <AboutPage page={pages[1]} /> } />
-          <Route path={pages[2].path} render={() => <ProjectsPage page={pages[2]} /> } />
+          <Route path={pages[1].path} render={() => <ProjectsPage page={pages[1]} /> } />
+          <Route path={pages[2].path} render={() => <AboutPage page={pages[2]} /> } />
 
           <Footer />
 
