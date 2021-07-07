@@ -27,7 +27,6 @@ function Header(props) {
                 <Link className="nav-link" to={pages[0].path} onClick={() => setExpanded(false)}>{pages[0].nav}</Link>
                 <Link className="nav-link" to={pages[2].path} onClick={() => setExpanded(false)}>{pages[2].nav}</Link>
                 <Link className="nav-link" to={pages[1].path} onClick={() => setExpanded(false)}>{pages[1].nav}</Link>
-                <Link className="nav-link" to={pages[3].path} onClick={() => setExpanded(false)}>{pages[3].nav}</Link>
               </Nav>
             </Navbar.Collapse>
         </Navbar>

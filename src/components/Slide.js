@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Button } from 'react-bootstrap';
 import { HashRouter, Route, Link } from 'react-router-dom';
 import { isMobile } from 'react-device-detect';
+import { animateScroll } from 'react-scroll';
 
 const Slide = ({property}) => {
 
@@ -29,12 +30,20 @@ const Slide = ({property}) => {
                         <p className={ isMobile ? "n-slide-body-mobile" : "n-slide-body" }>{bodyText}</p>
                         <div className="n-slide-card-buttons">
                             { firstButtonLabel != null && 
-                                <Link to={firstButtonLink}>
-                                    <Button className="n-slide-card-button" variant="outline-primary">
-                                        {firstButtonLabel}
-                                    </Button>
-                                    <img src={firstButtonIconSrc} />
-                                </Link>
+                                firstButtonLink === "END" ? 
+                                    <a onClick={() => animateScroll.scrollToBottom()}>
+                                        <Button className="n-slide-card-button" variant="outline-primary">
+                                            {firstButtonLabel}
+                                        </Button>
+                                        <img src={firstButtonIconSrc} />
+                                    </a>
+                                :
+                                    <Link to={firstButtonLink}>
+                                        <Button className="n-slide-card-button" variant="outline-primary">
+                                            {firstButtonLabel}
+                                        </Button>
+                                        <img src={firstButtonIconSrc} />
+                                    </Link>
                             }
                             { secondButtonLabel != null && 
                                 <a href={secondButtonLink}>

@@ -64,16 +64,6 @@ const data = {
                 title: 'Projects'
             }
         },
-        {
-            nav: 'Contact',
-            path: '/contact',
-            hero: {
-                title: 'Let\'s connect!',
-                subTitle: 'nilec@cs.washington.edu',
-                bodyText: 'Leave a message and I will get back to you as soon as possible.',
-                imgSrc: cityCorner
-            }
-        }
     ],
 
     // slides on the front page
@@ -101,11 +91,11 @@ const data = {
         },
         {
             id: 2,
-            title: 'Let\'s chat!',
+            title: 'Let\'s connect!',
             bodyText: '',
-            firstButtonLabel: 'Contact me',
+            firstButtonLabel: 'Contact links',
             firstButtonIconSrc: '',
-            firstButtonLink: '/contact',
+            firstButtonLink: 'END',
             bgImgSrc: bgImg3
         }
     ],
