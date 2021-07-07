@@ -256,6 +256,10 @@ code {
   cursor: pointer;
 }
 
+.n-dot.active {
+  background-color: #8ec5f1;
+}
+
 li.nostyle {
   list-style-type: none;
 }

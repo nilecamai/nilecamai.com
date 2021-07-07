@@ -57,9 +57,9 @@ export default function SlideView() {
                 
                 { !isMobile && 
                     <div className="n-slides-control">
-                        <span onClick={SetSlide(0)} className="n-dot"></span>
-                        <span onClick={SetSlide(1)} className="n-dot"></span>
-                        <span onClick={SetSlide(2)} className="n-dot"></span>
+                        {slides.map((_, idx) => {
+                            return <span onClick={SetSlide(idx)} className={`n-dot${index === idx ? " active" : ""}`}/>
+                        })}
                     </div>
                 }
             </div>
