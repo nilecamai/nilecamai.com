@@ -3,6 +3,7 @@ import './App.css';
 import { Container } from 'react-bootstrap/';
 import { HashRouter as HashRouter, Route } from 'react-router-dom';
 
+import ScrollToTop from './components/ScrollToTop';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
@@ -27,6 +28,7 @@ class App extends React.Component {
 
     return(
       <HashRouter>
+        <ScrollToTop />
         <Container className="p-0" fluid={true}>
           
           <Header pages={pages} />
