@@ -271,7 +271,8 @@ const data = {
 
     "about": (
         <div>
-            <p>Pleased to meet you! My name is <strong> Nile Camai</strong>, and I'm a Computer 
+            <p>
+                Pleased to meet you! My name is <strong> Nile Camai</strong>, and I'm a Computer 
                 Science student at the 
                 <strong className="uw-brand-color"> University of Washington</strong>. 
                 I was born and raised on the Sammamish plateau and am lucky to 
@@ -280,7 +281,8 @@ const data = {
             <h4>
                 Why CS?
             </h4>
-            <p>I love the possibility of building technologies ranging in 
+            <p>
+                I love the possibility of building technologies ranging in 
                 impact from the apps on the device in your pocket 
                 to the next greatest innovation in exploratory robotics. 
                 I hope that the fusion of logical and creative thinking that 
@@ -307,7 +309,8 @@ const data = {
                 of Washington </strong>
                 (ARUW) as a Controls team member.
             </p>
-            <p>My latest project, built on Java, React.js, and Spark, is a 
+            <p>
+                My latest project, built on Java, React.js, and Spark, is a 
                 pathfinding web application named 
                 <em> Campus Paths</em>. As the name suggests, the application is
                 designed to help UW students find the fastest paths between 
@@ -316,12 +319,15 @@ const data = {
                 I independently implemented several abstract data types and 
                 Dijkstra's algorithm underneath a frontend layer of TypeScript React.
             </p>
-            <p>When I'm not coding, I love to sleep. Other lesser-ranked pastimes of mine include 
-                struggling to cook, crafting eccentrically-titled Spotify playlists, 
-                playing Franz Liszt's Hungarian Rhapsody No. 15: <em> "Rákóczi March" </em>
-                for the ten-thousandth time, and
-                "casually" gaming. I like trying new things, seeking 
-                discomfort, and making the most out of life.
+            <p>
+                When I'm not coding, I love to sleep. Other things I enjoy include
+                cooking, working out, and playing musical instruments.
+                Recently I've gotten into building mechanical keyboards, a hobby
+                far too expensive for my own good.
+                I like trying new things, seeking discomfort, and making the most out of life.
+            </p>
+            <p>
+                Feel free to connect with me through the links at the bottom of my website.
             </p>
             <p>On to the next!</p>
         </div>
@@ -330,8 +336,9 @@ const data = {
     "footer": {
         copyright: "© 2021 by Nile Camai",
         socials: [
+            "mailto:nile.camai@gmail.com",
             "https://linkedin.com/in/nile-camai",
-            "https://github.com/nilecamai"
+            "https://github.com/nilecamai",
         ],
         footnote: "Created with matcha 🍵 love ❤ by Nile Camai"
     }
