@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.58523a0e.chunk.css",
-    "main.js": "/static/js/main.fcf53956.chunk.js",
-    "main.js.map": "/static/js/main.fcf53956.chunk.js.map",
+    "main.js": "/static/js/main.372e6949.chunk.js",
+    "main.js.map": "/static/js/main.372e6949.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.0197b26b.js",
     "runtime-main.js.map": "/static/js/runtime-main.0197b26b.js.map",
     "static/css/2.f14547f9.chunk.css": "/static/css/2.f14547f9.chunk.css",
@@ -13,23 +13,23 @@
     "static/css/main.58523a0e.chunk.css.map": "/static/css/main.58523a0e.chunk.css.map",
     "static/js/2.d69a8e07.chunk.js.LICENSE.txt": "/static/js/2.d69a8e07.chunk.js.LICENSE.txt",
     "static/media/android.53ad9066.svg": "/static/media/android.53ad9066.svg",
-    "static/media/bwPortrait.dab9c3aa.jpg": "/static/media/bwPortrait.dab9c3aa.jpg",
     "static/media/cityCorner.22e57f8c.jpg": "/static/media/cityCorner.22e57f8c.jpg",
-    "static/media/cityWaterfront.a4e9c50d.jpg": "/static/media/cityWaterfront.a4e9c50d.jpg",
     "static/media/devpost.97621b9c.svg": "/static/media/devpost.97621b9c.svg",
     "static/media/faceMeCard.2a997c56.png": "/static/media/faceMeCard.2a997c56.png",
     "static/media/faceMeSq.5ec0e982.png": "/static/media/faceMeSq.5ec0e982.png",
     "static/media/github.b1de3551.svg": "/static/media/github.b1de3551.svg",
     "static/media/go.c3e81682.svg": "/static/media/go.c3e81682.svg",
     "static/media/google_cloud.dd8fa784.svg": "/static/media/google_cloud.dd8fa784.svg",
+    "static/media/googlesf.d251ebd2.jpg": "/static/media/googlesf.d251ebd2.jpg",
     "static/media/java.5e9e5f33.svg": "/static/media/java.5e9e5f33.svg",
     "static/media/javascript.8e003be2.svg": "/static/media/javascript.8e003be2.svg",
+    "static/media/noogler.3d3fbf2f.jpg": "/static/media/noogler.3d3fbf2f.jpg",
     "static/media/opencv.0d8d7a5e.svg": "/static/media/opencv.0d8d7a5e.svg",
     "static/media/pokerChipsSimulatorCard.4d234775.png": "/static/media/pokerChipsSimulatorCard.4d234775.png",
     "static/media/pokerChipsSimulatorSq.53a541a4.png": "/static/media/pokerChipsSimulatorSq.53a541a4.png",
     "static/media/portrait.657adce5.jpg": "/static/media/portrait.657adce5.jpg",
     "static/media/python.79b1d9b6.svg": "/static/media/python.79b1d9b6.svg",
-    "static/media/resume.168b1ac5.pdf": "/static/media/resume.168b1ac5.pdf",
+    "static/media/resume.cbb9cd1d.pdf": "/static/media/resume.cbb9cd1d.pdf",
     "static/media/sarGui.e550ef1a.gif": "/static/media/sarGui.e550ef1a.gif",
     "static/media/setup.a4b48651.jpg": "/static/media/setup.a4b48651.jpg",
     "static/media/socket_io.aa27363b.svg": "/static/media/socket_io.aa27363b.svg",
@@ -41,6 +41,6 @@
     "static/css/2.f14547f9.chunk.css",
     "static/js/2.d69a8e07.chunk.js",
     "static/css/main.58523a0e.chunk.css",
-    "static/js/main.fcf53956.chunk.js"
+    "static/js/main.372e6949.chunk.js"
   ]
 }
