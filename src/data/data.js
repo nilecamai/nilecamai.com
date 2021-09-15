@@ -1,9 +1,9 @@
 import React from 'react';
 
 // Home page slides
-import bgImg1 from '../assets/images/cityWaterfront.jpg';
+import bgImg1 from '../assets/images/noogler.jpg';
 import bgImg2 from '../assets/images/setup.jpg';
-import bgImg3 from '../assets/images/bwPortrait.jpg';
+import bgImg3 from '../assets/images/googlesf.jpg';
 import resume from '../assets/documents/resume.pdf'
 
 // About page picture
@@ -274,17 +274,15 @@ const data = {
             <p>
                 Pleased to meet you! My name is <strong> Nile Camai</strong>, and I'm a Computer 
                 Science student at the 
-                <strong className="uw-brand-color"> University of Washington</strong>. 
-                I was born and raised on the Sammamish plateau and am lucky to 
-                call the great <strong style={{color: "green"}}> PNW </strong> my home for these next four years.
+                <strong className="uw-brand-color"> University of Washington</strong>.
             </p>
             <h4>
                 Why CS?
             </h4>
             <p>
-                I love the possibility of building technologies ranging in 
-                impact from the apps on the device in your pocket 
-                to the next greatest innovation in exploratory robotics. 
+                I love the potential that computing has to positively impact
+                the lives of others. All it takes is one great idea to make
+                waves as a software developer.
                 I hope that the fusion of logical and creative thinking that 
                 defines computer science can spark interest in others, too!
             </p>
@@ -292,13 +290,15 @@ const data = {
                 What's Nile up to?
             </h4>
             <p>
-                I am currently a STEP intern on the Payments team at 
+                During the summer of 2021, I was a STEP intern at 
                 <strong className="google-blue"> G</strong>
                 <strong className="google-red">o</strong>
                 <strong className="google-yellow">o</strong>
                 <strong className="google-blue">g</strong>
                 <strong className="google-green">l</strong>
-                <strong className="google-red">e </strong>! #noogler
+                <strong className="google-red">e </strong>!
+                As an intern on the Payments team, I helped improve user experience
+                by contributing to their internal web framework.
             </p>
             <p>
                 I was previously a CSE 14x teaching assistant at UW and taught 
