@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 
 import { useSpring, animated } from 'react-spring';
 import { isMobile } from 'react-device-detect';
 
 function Project(props) {
+
+    const [hovered, setHovered] = useState(0);
 
     const project = props.project;
 
@@ -24,10 +26,24 @@ function Project(props) {
         })
     }
 
+    const handleMouseOver = (e) => {
+        e.currentTarget.src = project.imgHover;
+        setHovered(true);
+    }
+
+    const handleMouseOut = (e) => {
+        e.currentTarget.src = project.imgSrc;
+        setHovered(false);
+    }
+
     let projectHero = (
         <Col className="justify-content-center">
             <Row className="justify-content-center">
-                <img className="n-project-image" src={project.imgSrc} />
+                <img className="n-project-image" src={project.imgSrc}
+                        onMouseOver={e => handleMouseOver(e)}
+                        onMouseOut={e => handleMouseOut(e)}
+                        style={{transform: `${hovered ? 'scale(1.1,1.1)' : 'scale(1,1)'}`, transition: '0.5s'}}
+                />
                 { project.buttonLabel &&
                     <Button className="n-project-button" variant="outline-primary" href={project.buttonLink}>
                         {project.buttonLabel}

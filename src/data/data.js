@@ -9,11 +9,9 @@ import resume from '../assets/documents/resume.pdf'
 // About page picture
 import portrait from '../assets/images/portrait.jpg';
 
-// Contact page picture
-import cityCorner from '../assets/images/cityCorner.jpg'
-
 // Home page carousel
 import pokerChipsSimulatorCard from '../assets/images/pokerChipsSimulatorCard.png';
+import campusPathsCard from '../assets/images/campusPathsCard.png';
 import telloMapperCard from '../assets/images/telloMapperCard.png';
 import faceMeCard from '../assets/images/faceMeCard.png';
 
@@ -22,18 +20,27 @@ import github from '../assets/icons/github.svg';
 import devpost from '../assets/icons/devpost.svg';
 import java from '../assets/icons/java.svg';
 import javascript from '../assets/icons/javascript.svg';
+import typescript from '../assets/icons/typescript.svg';
 import python from '../assets/icons/python.svg';
 import go from '../assets/icons/go.svg';
 import android from '../assets/icons/android.svg';
 import socket_io from '../assets/icons/socket_io.svg';
 import opencv from '../assets/icons/opencv.svg';
 import google_cloud from '../assets/icons/google_cloud.svg';
+import react from '../assets/icons/react.svg';
+import sparkjava from '../assets/icons/sparkjava.png';
 
 // Projects page images
+import campusPathsSq from '../assets/images/campusPathsSq.svg';
+import campusPathsHover from '../assets/images/campusPathsHover.gif';
 import pokerChipsSimulatorSq from '../assets/images/pokerChipsSimulatorSq.png';
+import pokerChipsSimulatorHover from '../assets/images/pokerChipsSimulatorHover.gif';
 import faceMeSq from '../assets/images/faceMeSq.png';
-import telloMapper from '../assets/images/telloMapper.gif';
-import sarGui from '../assets/images/sarGui.gif';
+import faceMeHover from '../assets/images/faceMeHover.gif';
+import telloMapperSq from '../assets/images/telloMapperSq.svg';
+import telloMapperHover from '../assets/images/telloMapperHover.gif';
+import sarGuiSq from '../assets/images/sarGuiSq.png';
+import sarGuiHover from '../assets/images/sarGuiHover.gif';
 
 const data = {
 
@@ -82,8 +89,8 @@ const data = {
         },
         {
             id: 1,
-            title: 'I make stuff',
-            bodyText: 'that is awesome. check out my work:',
+            title: 'I make cool things!',
+            bodyText: 'Check out my work:',
             firstButtonLabel: 'Projects',
             firstButtonIconSrc: '',
             firstButtonLink: '/projects',
@@ -93,7 +100,7 @@ const data = {
             id: 2,
             title: 'Let\'s connect!',
             bodyText: '',
-            firstButtonLabel: 'Contact links',
+            firstButtonLabel: 'Contact',
             firstButtonIconSrc: '',
             firstButtonLink: 'END',
             bgImgSrc: bgImg3
@@ -104,10 +111,10 @@ const data = {
     "cards": [
         {
             id: 0,
-            title: 'Poker Chips Simulator',
-            subTitle: 'Have a deck but forgot the poker chips? Play on with virtual currency!',
-            imgSrc: pokerChipsSimulatorCard,
-            link: 'https://devpost.com/software/poker-chip-simulator',
+            title: 'Campus Paths',
+            subTitle: 'Got far-apart classes? Find the most optimal routes around campus!',
+            imgSrc: campusPathsCard,
+            link: 'https://nilecamai-campuspaths.netlify.app',
             selected: false
         },
         {
@@ -120,53 +127,73 @@ const data = {
         },
         {
             id: 2,
+            title: 'Poker Chips Simulator',
+            subTitle: 'Have a deck but forgot the poker chips? Play on with virtual currency!',
+            imgSrc: pokerChipsSimulatorCard,
+            link: 'https://devpost.com/software/poker-chip-simulator',
+            selected: false
+        },
+        {
+            id: 3,
             title: 'Tello Mapper',
             subTitle: 'Map paths and autonomously fly your DJI Tello with this Android application.',
             imgSrc: telloMapperCard,
             link: 'https://play.google.com/store/apps/details?id=riverflow.tellomapper',
             selected: false
-        }
+        },
     ],
 
     "projects": [
         {
-            title: 'Poker Chips Simulator',
-            imgSrc: pokerChipsSimulatorSq,
+            title: 'Campus Paths',
+            imgSrc: campusPathsSq,
+            imgHover: campusPathsHover,
             links: [
-                {
-                    url: 'https://github.com/9KelvinN/Winston-Nile-Kelvin-CSE143-Final',
-                    label: 'GitHub',
-                    src: github,
-                },
-                {
-                    url: 'https://devpost.com/software/poker-chip-simulator',
-                    label: 'Devpost',
-                    src: devpost,
-                },
+                // no source code since the course is still being offered!
             ],
             icons: [
                 {
-                    label: 'JavaScript',
-                    src: javascript,
+                    label: 'Java',
+                    src: java,
                 },
                 {
-                    label: 'Socket.IO',
-                    src: socket_io,
+                    label: 'TypeScript',
+                    src: typescript,
+                },
+                {
+                    label: 'React',
+                    src: react,
+                },
+                {
+                    label: 'Spark Java',
+                    src: sparkjava,
                 },
             ],
-            buttonLink: 'http://54.218.193.60:3000/',
-            buttonLabel: '', // TODO: update link and label when online: 'Try it out!'
+            buttonLink: 'https://nilecamai-campuspaths.netlify.app',
+            buttonLabel: 'Try it out!',
             description: (
                 <div>
-                    <p>Ever wanted to play a thrilling game of Texas Hold'em, but forgot to bring the chips? This .io web application solves that problem by using virtual currency with familiar betting rules to play together.</p>
-                    <p>The host can create a lobby with 3-5 players and have their friends join with a four-digit room code. The game will then handle player balances, the pot, the ante, and the turns according to Texas Hold'em rules.</p>
-                    <p>This project was a collaboration with classmates Kelvin Ng and Winston Bullen for our CSE143 final project.</p>
+                    <p>
+                        <i>How do I get around UW?</i> This web application will 
+                        give you the fastest path from point A to point B in an
+                        instant! The app lists landmarks around campus for you
+                        to navigate between. You can also display steps
+                        one-by-one, use your own location as the origin, and
+                        drag the map around to your liking.
+                    </p>
+                    <p>
+                        This project was the culmination of CSE 331: Software 
+                        Design and Implementation. It features a Spark Java
+                        backend to handle pathfinding requests, Dijkstra's
+                        algorithm, and a React TypeScript frontend.
+                    </p>
                 </div>
             )
         },
         {
             title: 'FaceMe',
             imgSrc: faceMeSq,
+            imgHover: faceMeHover,
             links: [
                 {
                     url: 'https://github.com/nilecamai/FaceMe',
@@ -197,15 +224,85 @@ const data = {
             buttonLabel: null,
             description: (
                 <div>
-                    <p>With the lockdown and stay-at-home orders, connecting with people is more important than ever. However, some of our loved ones aren't the most tech-savvy with video conferencing apps.</p>
-                    <p>FaceMe is a tool that aims to make video calls more accessible. With the help of the OpenCV and Google Cloud libraries, the application uses audio signals, visual cues, and speech commands as accessibility features.</p>
-                    <p>This project was a collaboration with teammates Kelvin Ng, Devesh Sarda, Tenzin Low, and Nikola Bojanic as a submission to DubHacks 2020. It won Best Use of Google Cloud and Best First-Time Hack.</p>
+                    <p>
+                        With the lockdown and stay-at-home orders, connecting
+                        with people is more important than ever. However, this
+                        can be somewhat difficult as some of our loved ones
+                        maybe aren't the most tech-savvy with video conferencing
+                        technology.
+                    </p>
+                    <p>
+                        FaceMe is a tool that aims to make video calls more
+                        accessible. With the help of the OpenCV and Google Cloud
+                        libraries, the application uses audio signals, visual
+                        cues, and speech commands as accessibility features.
+                    </p>
+                    <p>
+                        This project was a collaboration with teammates Kelvin
+                        Ng, Devesh Sarda, Tenzin Low, and Nikola Bojanic as a
+                        submission to DubHacks 2020. It won Best Use of Google
+                        Cloud and Best First-Time Hack.
+                    </p>
+                </div>
+            )
+        },
+        {
+            title: 'Poker Chips Simulator',
+            imgSrc: pokerChipsSimulatorSq,
+            imgHover: pokerChipsSimulatorHover,
+            links: [
+                {
+                    url: 'https://github.com/9KelvinN/Winston-Nile-Kelvin-CSE143-Final',
+                    label: 'GitHub',
+                    src: github,
+                },
+                {
+                    url: 'https://devpost.com/software/poker-chip-simulator',
+                    label: 'Devpost',
+                    src: devpost,
+                },
+            ],
+            icons: [
+                {
+                    label: 'JavaScript',
+                    src: javascript,
+                },
+                {
+                    label: 'Socket.IO',
+                    src: socket_io,
+                },
+            ],
+            buttonLink: 'http://54.218.193.60:3000/',
+            buttonLabel: '', // TODO: update link and label when online: 'Try it out!'
+            description: (
+                <div>
+                    <p>
+                        Ever wanted to play a thrilling game of Texas Hold'em,
+                        but forgot to bring the chips? This .io web application
+                        solves that problem by using virtual currency in a
+                        betting simulator companion app. This way, you can still
+                        experience the thrill of real card gameplay without
+                        losing the fun of betting!
+                    </p>
+                    <p>
+                        The host can create a lobby with 3-5 players and have
+                        their friends join with a four-digit room code. The game
+                        will then handle player balances, the pot, the ante, and
+                        the turns according to Texas Hold'em rules.
+                    </p>
+                    <p>
+                        This project was a collaboration with classmates Kelvin
+                        Ng and Winston Bullen for our CSE143 final project. It
+                        is built entirely in JavaScript with the help of
+                        Socket.IO.
+                    </p>
                 </div>
             )
         },
         {
             title: 'TelloMapper',
-            imgSrc: telloMapper,
+            imgSrc: telloMapperSq,
+            imgHover: telloMapperHover,
             links: [
                 {
                     url: 'https://github.com/nilecamai/TelloMapper',
@@ -236,15 +333,28 @@ const data = {
             },
             description: (
                 <div>
-                    <p>TelloMapper is an Android application that connects to a DJI Tello drone to control its movement.</p>
-                    <p>Users create paths by placing points on a coordinate plane. These coordinate sets are then saved as "paths" that can be flown on a DJI Tello connected via Wi-Fi.</p>
-                    <p>The app code is written in Java, and the flight controls are written in Go using Gobot drivers.</p>
+                    <p>
+                        TelloMapper is an Android application that connects to a
+                        DJI Tello drone to control its movement.
+                    </p>
+                    <p>
+                        Users create paths by placing points on a coordinate
+                        plane. These coordinate sets are then serialized into
+                        instructions that can be flown on a DJI Tello directly
+                        from the app when the device is connected to the drone.
+                    </p>
+                    <p>
+                        Part-passion project and part-school assignment,
+                        I built this app as a project for the IB Computer
+                        Science SL Internal Assessment.
+                    </p>
                 </div>
             )
         },
         {
-            title: 'Synthetic Aperture Radar (SAR) GUI',
-            imgSrc: sarGui,
+            title: 'Unmanned Aerial System-Synthetic Aperture Radar (UAS-SAR)',
+            imgSrc: sarGuiSq,
+            imgHover: sarGuiHover,
             links: [
                 {
                     url: 'https://github.com/nilecamai/UAV-SAR/',
@@ -262,8 +372,26 @@ const data = {
             buttonLabel: null,
             description: (
                 <div>
-                    <p>This graphical user interface was developed for the sole use alongside a synthetic-aperture radar (SAR) project at MIT during Beaver Works Summer Institute 2018.</p>
-                    <p>The Python TKinter desktop application is able to connect to a PulsON 440 Ranging and Radar Module to start and stop radar collection. It can also generate and visualize heatmaps using NumPy and Matplotlib.</p>
+                    <p>
+                        This system, which consists of a hexacopter drone, a
+                        Raspberry Pi, and a PulsON 440 Ranging and Radar Module
+                        is capable of radar imaging using pulse data and back
+                        projection image reconstruction.
+                    </p>
+                    <p>
+                        I designed a companion Python application to easily
+                        interface with a drone-mounted radar platform to perform
+                        radar imaging. It is able to connect to the radar to
+                        start and stop pulse data collection. It can also
+                        process and visualize radar pulse data as 2-dimensional
+                        heatmaps.
+                    </p>
+                    <p>
+                        This app was built to help my UAS-SAR (Unmanned Aerial
+                        System-Synthetic Aperture Radar) subteam demonstrate
+                        our final project at Beaver Works Summer Institute 2018
+                        at MIT.
+                    </p>
                 </div>
             )
         },
