@@ -13,7 +13,7 @@ function Header(props) {
   const [expanded, setExpanded] = useState(false)
 
     return(
-        <Navbar sticky="top" className="border-bottom" bg="white" expand="lg" expanded={expanded}>
+        <Navbar sticky="top" className="border-bottom" bg="dark" variant="dark" expand="lg" expanded={expanded}>
             <Navbar.Brand>
               <Link to={pages[0].path} className="nav-home-link">
                 { !isMobile && data.title }

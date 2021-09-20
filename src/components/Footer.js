@@ -22,7 +22,7 @@ function Footer() {
 
     return(
         <footer className="mt-5">
-            <Container fluid={true} className="border-top py-3">
+            <Container fluid={true}>
                 { isMobile && socialIcons }
                 <Row className="justify-content-between p-3">
                     <Col className={leftFooterAlign} md={3} sm={12}>

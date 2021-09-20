@@ -44,6 +44,8 @@ import sarGuiHover from '../assets/images/sarGuiHover.gif';
 
 const data = {
 
+    "resume": resume,
+
     "title": 'nilecamai.me',
 
     "fadeIn": {
@@ -55,12 +57,18 @@ const data = {
         {
             nav: 'Home',
             path: '/',
+            hero: {
+                title: 'Nile Camai',
+                subTitle: 'CS 💻 @ UW ',
+                bodyText: 'Welcome to my website!',
+            }
         },
         {
             nav: 'Projects',
             path: '/projects',
             hero: {
-                title: 'Projects'
+                title: 'Projects',
+                bodyText: 'Code I wrote that works'
             }
         },
         {
@@ -136,7 +144,7 @@ const data = {
         {
             id: 3,
             title: 'Tello Mapper',
-            subTitle: 'Map paths and autonomously fly your DJI Tello with this Android application.',
+            subTitle: 'Map paths and fly your DJI Tello autonomously with this Android application.',
             imgSrc: telloMapperCard,
             link: 'https://play.google.com/store/apps/details?id=riverflow.tellomapper',
             selected: false
@@ -464,7 +472,7 @@ const data = {
     "footer": {
         copyright: "© 2021 by Nile Camai",
         socials: [
-            "mailto:nile.camai@gmail.com",
+            "mailto:nilec@cs.washington.edu",
             "https://linkedin.com/in/nile-camai",
             "https://github.com/nilecamai",
         ],

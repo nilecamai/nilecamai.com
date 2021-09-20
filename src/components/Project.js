@@ -26,6 +26,15 @@ function Project(props) {
         })
     }
 
+    const handleClick = (e) => {
+        if (hovered) {
+            e.currentTarget.src = project.imgSrc;
+        } else {
+            e.currentTarget.src = project.imgHover;
+        }
+        setHovered(!hovered);
+    }
+
     const handleMouseOver = (e) => {
         e.currentTarget.src = project.imgHover;
         setHovered(true);
@@ -37,9 +46,10 @@ function Project(props) {
     }
 
     let projectHero = (
-        <Col className="justify-content-center">
+        <Col className="justify-content-center my-auto">
             <Row className="justify-content-center">
-                <img className="n-project-image" src={project.imgSrc}
+                <img className="n-image" src={project.imgSrc}
+                        onClick={e => handleClick(e)}
                         onMouseOver={e => handleMouseOver(e)}
                         onMouseOut={e => handleMouseOut(e)}
                         style={{transform: `${hovered ? 'scale(1.1,1.1)' : 'scale(1,1)'}`, transition: '0.5s'}}

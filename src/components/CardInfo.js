@@ -14,13 +14,13 @@ function CardInfo(props) {
     });
 
     return(
-        <div className="n-card-test"
+        <div className="n-card-overlay"
             onMouseEnter={() => set({ o: 100 })}
             onMouseLeave={() => set({ o: op })}
         >
             <animated.div className="n-card-info" style={{ opacity: o.interpolate(o => `${o}%`) }}>
                 <p className="n-card-title">{props.title}</p>
-                <p className="n-card-sub-title">{props.subTitle}</p>
+                <p className="n-card-subtitle">{props.subTitle}</p>
                 {/* <p href={props.link} target="_blank" rel="noopener noreferrer">Link</p> */}
             </animated.div>
         </div>
