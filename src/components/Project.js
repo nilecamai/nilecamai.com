@@ -54,6 +54,8 @@ function Project(props) {
                         onMouseOut={e => handleMouseOut(e)}
                         style={{transform: `${hovered ? 'scale(1.1,1.1)' : 'scale(1,1)'}`, transition: '0.5s'}}
                 />
+            </Row>
+            <Row className="justify-content-center">
                 { project.buttonLabel &&
                     <Button className="n-project-button" variant="outline-primary" href={project.buttonLink}>
                         {project.buttonLabel}
