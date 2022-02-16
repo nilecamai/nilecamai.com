@@ -46,7 +46,7 @@ const data = {
 
     "resume": resume,
 
-    "title": 'nilecamai.me',
+    "title": 'nilecamai.com',
 
     "fadeIn": {
         opacity: 1,
