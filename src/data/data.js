@@ -190,8 +190,8 @@ const data = {
                         drag the map around to your liking.
                     </p>
                     <p>
-                        This project was the culmination of CSE 331: Software 
-                        Design and Implementation. It features a Spark Java
+                        This project was the culmination of <em>CSE 331: Software 
+                        Design and Implementation.</em> It features a Spark Java
                         backend to handle pathfinding requests, Dijkstra's
                         algorithm, and a React TypeScript frontend.
                     </p>
@@ -300,9 +300,9 @@ const data = {
                     </p>
                     <p>
                         This project was a collaboration with classmates Kelvin
-                        Ng and Winston Bullen for our CSE143 final project. It
-                        is built entirely in JavaScript with the help of
-                        Socket.IO.
+                        Ng and Winston Bullen for our <em>CSE 143</em> final 
+                        project. It is built entirely in JavaScript with the 
+                        help of Socket.IO.
                     </p>
                 </div>
             )
@@ -409,7 +409,7 @@ const data = {
         <div>
             <p>
                 Pleased to meet you! My name is <strong> Nile Camai</strong>, and I'm a Computer 
-                Science student at the 
+                Science student and teaching assistant at the 
                 <strong className="uw-brand-color"> University of Washington</strong>.
             </p>
             <h4>
@@ -423,7 +423,7 @@ const data = {
                 defines computer science can spark interest in others, too!
             </p>
             <h4>
-                What's Nile up to?
+                What has Nile been working on?
             </h4>
             <p>
                 During the summer of 2021, I was a STEP intern at 
@@ -432,40 +432,49 @@ const data = {
                 <strong className="google-yellow">o</strong>
                 <strong className="google-blue">g</strong>
                 <strong className="google-green">l</strong>
-                <strong className="google-red">e </strong>!
+                <strong className="google-red">e</strong>!
                 As an intern on the Payments team, I helped improve user experience
                 by contributing to their internal web framework.
             </p>
             <p>
-                I was previously a CSE 14x teaching assistant at UW and taught 
+                I'm looking foward to returning to Google for the summer of
+                2022, this time as a SWE intern on the Ads team!
+            </p>
+            <p>
+                As a member of <strong className="aruw-brand-color">
+                    Advanced Robotics at the University of Washington</strong>,
+                a student organization at my school that
+                participates in the DJI RoboMaster University League, I
+                develop <a href="https://gitlab.com/aruw/controls/aruw-mcb">
+                    main control board code</a> that
+                our robots use to compete against
+                other teams as well as contribute to
+                an open-source library
+                named <a href="https://gitlab.com/aruw/controls/taproot">
+                    taproot</a> which helps other teams easily
+                bootstrap a working robot.
+            </p>
+            <p>
+                I am also currently a teaching assistant at UW 
+                for <em> CSE 332: Data Structures and Parallelism. </em>
+                I also previously taught 
                 <em> CSE 142: Computer Programming I </em> in Winter 2021 and
                 <em> CSE 143: Computer Programming II</em> in Spring 2021.
-                I also participate in 
-                <strong className="aruw-brand-color"> Advanced Robotics at the University
-                of Washington </strong>
-                (ARUW) as a Controls team member.
             </p>
-            <p>
-                My latest project, built on Java, React.js, and Spark, is a 
-                pathfinding web application named 
-                <em> Campus Paths</em>. As the name suggests, the application is
-                designed to help UW students find the fastest paths between 
-                buildings on campus. In this culminating project for
-                <em> CSE 331: Software Design &amp; Implementation, </em>
-                I independently implemented several abstract data types and 
-                Dijkstra's algorithm underneath a frontend layer of TypeScript React.
-            </p>
+            <h4>
+                What else is Nile up to?
+            </h4>
             <p>
                 When I'm not coding, I love to sleep. Other things I enjoy include
-                cooking, working out, and playing musical instruments.
-                Recently I've gotten into building mechanical keyboards, a hobby
-                far too expensive for my own good.
+                cooking, bouldering, and gaming. Fashion
+                and <a href="https://youtube.com/playlist?list=PLWMKCq6oH71zkYsUqXQkUwYZjnzQEZ1ts">
+                    mechanical keyboards</a> are
+                probably my most expensive hobbies at the moment.
                 I like trying new things, seeking discomfort, and making the most out of life.
             </p>
             <p>
-                Feel free to connect with me through the links at the bottom of my website.
+                Feel free to connect through the links at the bottom of my website!
             </p>
-            <p>On to the next!</p>
         </div>
     ),
 
