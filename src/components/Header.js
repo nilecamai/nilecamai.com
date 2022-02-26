@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import data from '../data/data';
 import { Navbar, Nav } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link } from '@reach/router';
 import { isMobile } from 'react-device-detect';
 
 import logo from '../assets/images/logo192.png';

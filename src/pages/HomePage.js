@@ -2,11 +2,10 @@ import React from 'react';
 
 import Hero from '../components/Hero';
 import Carousel from '../components/Carousel';
-import SlideView from '../components/SlideView';
 import { useSpring, animated } from 'react-spring';
 import { isMobile } from 'react-device-detect';
 import data from '../data/data';
-import { Link } from 'react-router-dom';
+import { Link } from '@reach/router';
 import { Button, Container, Row } from 'react-bootstrap';
 
 function HomePage(props) {
