@@ -3,6 +3,12 @@ module.exports = {
     title: `Nile Camai`,
   },
   plugins: [
-    `gatsby-plugin-sass`
+    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`./src/components/Layout.js`),
+      },
+    },
   ],
 }
