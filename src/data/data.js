@@ -29,6 +29,8 @@ import opencv from '../assets/icons/opencv.svg';
 import google_cloud from '../assets/icons/google_cloud.svg';
 import react from '../assets/icons/react.svg';
 import sparkjava from '../assets/icons/sparkjava.png';
+import firebase from '../assets/icons/firebase.svg';
+import expo from '../assets/icons/expo.svg';
 
 // Projects page images
 import campusPathsSq from '../assets/images/campusPathsSq.svg';
@@ -37,6 +39,7 @@ import pokerChipsSimulatorSq from '../assets/images/pokerChipsSimulatorSq.png';
 import pokerChipsSimulatorHover from '../assets/images/pokerChipsSimulatorHover.gif';
 import faceMeSq from '../assets/images/faceMeSq.png';
 import faceMeHover from '../assets/images/faceMeHover.gif';
+import boothSq from '../assets/images/boothSq.png';
 import telloMapperSq from '../assets/images/telloMapperSq.svg';
 import telloMapperHover from '../assets/images/telloMapperHover.gif';
 import sarGuiSq from '../assets/images/sarGuiSq.png';
@@ -68,7 +71,7 @@ const data = {
             path: '/projects',
             hero: {
                 title: 'Projects',
-                bodyText: 'Code I wrote that works'
+                bodyText: 'Some of my beep boops'
             }
         },
         {
@@ -250,6 +253,66 @@ const data = {
                         Ng, Devesh Sarda, Tenzin Low, and Nikola Bojanic as a
                         submission to DubHacks 2020. It won Best Use of Google
                         Cloud and Best First-Time Hack.
+                    </p>
+                </div>
+            )
+        },
+        {
+            title: 'Booth',
+            imgSrc: boothSq,
+            imgHover: boothSq,
+            links: [
+                {
+                    url: 'https://github.com/nilecamai/BoothApp',
+                    label: 'GitHub',
+                    src: github,
+                },
+                {
+                    url: 'https://devpost.com/software/booth',
+                    label: 'Devpost',
+                    src: devpost,
+                },
+            ],
+            icons: [
+                {
+                    label: 'JavaScript',
+                    src: javascript,
+                },
+                {
+                    label: 'Expo',
+                    src: expo,
+                },
+                {
+                    label: 'Firebase',
+                    src: firebase,
+                },
+                {
+                    label: 'Google Cloud API',
+                    src: google_cloud,
+                },
+            ],
+            buttonLink: 'https://nilecamai.github.io/Booth-DH21/',
+            buttonLabel: 'See the concept',
+            description: (
+                <div>
+                    <p>
+                        Pop-up gatherings and events are popular among
+                        communities everywhere. Whether it's a farmers market,
+                        school fair, or pop-up art gallery, organizers, vendors,
+                        and visitors come together to share interests unique to
+                        their community.
+                    </p>
+                    <p>
+                        Booth is an app concept that aims to bring new life to
+                        pop-up culture with a focus on promoting local events,
+                        bringing communities and neighborhoods closer together.
+                        Using Expo as our frontend toolchain enabled us to
+                        develop natively for Android, iOS, and web simultaneously.
+                    </p>
+                    <p>
+                        This project was a collaboration with teammates Nikola
+                        Bojanic, Adithi Raghavan, and Pulkit Singhal as a
+                        submission to DubHacks 2021. It won best use of Domain.com.
                     </p>
                 </div>
             )
