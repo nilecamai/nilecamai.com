@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import data from '../data/data';
 import { Navbar, Nav } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link } from 'gatsby';
 import { isMobile } from 'react-device-detect';
 
 import logo from '../assets/images/logo192.png';
 
-function Header(props) {
+function Header() {
 
-  const pages = props.pages
+  const pages = data.pages;
 
   const [expanded, setExpanded] = useState(false)
 
