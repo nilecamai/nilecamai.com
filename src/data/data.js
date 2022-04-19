@@ -125,7 +125,7 @@ const data = {
             title: 'Campus Paths',
             subTitle: 'Got far-apart classes? Find the most optimal routes around campus!',
             imgSrc: campusPathsCard,
-            link: 'https://nilecamai-campuspaths.netlify.app',
+            link: 'https://campuspaths.nilecamai.com',
             selected: false
         },
         {
@@ -542,11 +542,12 @@ const data = {
     ),
 
     "footer": {
-        copyright: "© 2021 by Nile Camai",
+        copyright: "© 2022 by Nile Camai",
         socials: [
             "mailto:nilec@cs.washington.edu",
             "https://linkedin.com/in/nile-camai",
             "https://github.com/nilecamai",
+            "https://gitlab.com/nilecamai",
         ],
         footnote: "Created with matcha 🍵 love ❤ by Nile Camai"
     }
