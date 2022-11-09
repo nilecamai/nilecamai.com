@@ -472,7 +472,7 @@ const data = {
         <div>
             <p>
                 Pleased to meet you! My name is <strong> Nile Camai</strong>, and I'm a Computer 
-                Science student and teaching assistant at the 
+                Science student at the 
                 <strong className="uw-brand-color"> University of Washington</strong>.
             </p>
             <h4>
@@ -489,40 +489,41 @@ const data = {
                 What has Nile been working on?
             </h4>
             <p>
-                During the summer of 2021, I was a STEP intern at 
+                These past two summers, I've interned at 
                 <strong className="google-blue"> G</strong>
                 <strong className="google-red">o</strong>
                 <strong className="google-yellow">o</strong>
                 <strong className="google-blue">g</strong>
                 <strong className="google-green">l</strong>
                 <strong className="google-red">e</strong>!
-                As an intern on the Payments team, I helped improve user experience
-                by contributing to their internal web framework.
             </p>
             <p>
-                I'm looking foward to returning to Google for the summer of
-                2022, this time as a SWE intern on the Ads team!
+                During summer 2022, I was a Software Engineer intern under the 
+                Ads team in Mountain View, CA, helping migrate an Ads review tool 
+                to a new frontend stack.
+                At my previous summer 2021 remote internship for the Payments team, 
+                I built a fully-featured component for an internal web catalog.
             </p>
             <p>
-                As a member of <strong className="aruw-brand-color">
+                As a previous member of <strong className="aruw-brand-color">
                     Advanced Robotics at the University of Washington</strong>,
                 a student organization at my school that
                 participates in the DJI RoboMaster University League, I
-                develop <a href="https://gitlab.com/aruw/controls/aruw-mcb">
+                developed <a href="https://gitlab.com/aruw/controls/aruw-mcb">
                     main control board code</a> that
-                our robots use to compete against
-                other teams as well as contribute to
+                competition robots use to compete against
+                other teams as well as contributed to
                 an open-source library
                 named <a href="https://gitlab.com/aruw/controls/taproot">
                     taproot</a> which helps other teams easily
                 bootstrap a working robot.
             </p>
             <p>
-                I am also currently a teaching assistant at UW 
-                for <em> CSE 332: Data Structures and Parallelism. </em>
-                I also previously taught 
-                <em> CSE 142: Computer Programming I </em> in Winter 2021 and
-                <em> CSE 143: Computer Programming II</em> in Spring 2021.
+                I was also a teaching assistant at UW 
+                for 
+                <em> CSE 332: Data Structures and Parallelism </em> in Winter/Spring 2022,
+                <em> CSE 143: Computer Programming II</em> in Spring 2021, and
+                <em> CSE 142: Computer Programming I </em> in Winter 2021.
             </p>
             <h4>
                 What else is Nile up to?
