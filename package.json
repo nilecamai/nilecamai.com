@@ -19,7 +19,7 @@
     "react-device-detect": "^1.14.0",
     "react-dom": "^16.13.1",
     "react-scroll": "^1.8.2",
-    "react-social-icons": "^4.1.0",
+    "react-social-icons": "^5.13.0",
     "react-spring": "^8.0.27",
     "sass": "^1.49.9"
   },
